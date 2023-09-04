@@ -1,3 +1,11 @@
+@font-face {
+  font-family: boxo;
+  src: url(./fonts/bpg_boxo.ttf);
+}
+@font-face {
+  font-family: le studio;
+  src: url(./fonts/bpg_le_studio_02_caps.ttf);
+}
 .flex {
   display: flex;
 }
@@ -8,4 +16,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.boxo {
+  font-family: boxo;
+}
+.le-studio {
+  font-family: le studio;
 }
