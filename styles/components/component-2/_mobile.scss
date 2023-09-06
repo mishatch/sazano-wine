@@ -1,0 +1,16 @@
+.component-2 {
+  width: 100%;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  > .main-heading {
+    width: 100%;
+    > img {
+      max-width: 100%;
+    }
+  }
+}
