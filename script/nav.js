@@ -1,7 +1,10 @@
+//Sandwich navigation bar animation
+
 const button = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 const links = document.querySelector(".links");
 let clicked = false;
+
 button.addEventListener("click", () => {
   console.log("Button was clicked!");
   if (!clicked) {
