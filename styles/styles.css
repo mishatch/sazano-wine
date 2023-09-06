@@ -178,7 +178,7 @@ nav > button {
   padding-top: 33px;
   margin-top: -35px;
   background-color: #4c0027;
-  transition: padding-top 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  transition: margin-top 0.5s ease-in-out;
 }
 nav > button:hover {
   cursor: pointer;

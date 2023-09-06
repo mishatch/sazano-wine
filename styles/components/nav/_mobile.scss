@@ -50,7 +50,7 @@ nav {
     padding-top: 33px;
     margin-top: -35px;
     background-color: $nav-links;
-    transition: padding-top 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    transition: margin-top 0.5s ease-in-out;
     &:hover {
       cursor: pointer;
     }
