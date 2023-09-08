@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -36,6 +37,20 @@
 
 body {
   background-color: #f5e6ee;
+}
+
+.content-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.content-container > section {
+  scroll-snap-align: start;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1024px) {
@@ -142,7 +157,7 @@ nav > .links {
   margin-top: 14px;
   margin-bottom: 7px;
   display: none;
-  gap: 12px;
+  gap: 6px;
   transition: display 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 1;
 }
@@ -153,7 +168,7 @@ nav > .links .hidden {
 nav > .links > a {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   position: relative;
 }
 nav > .links > a::before {
@@ -187,7 +202,7 @@ nav > button:hover {
 
 .component-2 {
   width: 100%;
-  height: 660px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,9 +212,25 @@ nav > button:hover {
 }
 .component-2 > .main-heading {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .component-2 > .main-heading > img {
   max-width: 100%;
+}
+
+.component-3 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.component-3 > h1 {
+  color: #4c0027;
+}
+.component-3 > p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
