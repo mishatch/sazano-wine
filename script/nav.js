@@ -30,5 +30,10 @@ button.addEventListener("click", () => {
   }
 });
 window.addEventListener("load", function () {
+  if (window.location.hash) {
+    // Remove the hash from the URL
+    history.replaceState(null, null, " ");
+  }
+  // Scroll to the top
   window.scrollTo(0, 0);
 });
