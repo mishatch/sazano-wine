@@ -29,11 +29,14 @@ button.addEventListener("click", () => {
     clicked = false;
   }
 });
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   if (window.location.hash) {
     // Remove the hash from the URL
     history.replaceState(null, null, " ");
   }
-  // Scroll to the top
-  window.scrollTo(0, 0);
+
+  // Delay the scroll to make sure it happens after the browser's automatic scroll
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 1);
 });
