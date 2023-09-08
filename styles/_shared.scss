@@ -34,7 +34,6 @@ body {
     scroll-snap-align: start;
   }
 }
-html,
-body {
-  scroll-behavior: smooth;
+.relative {
+  position: relative;
 }

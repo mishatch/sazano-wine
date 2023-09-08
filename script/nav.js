@@ -5,9 +5,6 @@ const nav = document.querySelector(".nav");
 const links = document.querySelector(".links");
 let clicked = false;
 
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("nav div a");
-
 button.addEventListener("click", () => {
   console.log("Button was clicked!");
   if (!clicked) {
@@ -32,20 +29,6 @@ button.addEventListener("click", () => {
     clicked = false;
   }
 });
-
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("nav div a[href*=" + id + "]")
-          .classList.add("active");
-      });
-    }
-  });
-};
+window.addEventListener("load", function () {
+  window.scrollTo(0, 0);
+});
