@@ -227,13 +227,17 @@ nav > button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .component-3 > h1 {
   color: #4c0027;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .component-3 > p {
-  text-align: center;
+  font-size: 12px;
+  text-align: justify;
+  text-indent: 10px;
 }
 .component-3 > .images {
   width: 100%;
