@@ -11,18 +11,25 @@
     margin-top: 100px;
   }
   > p {
-    font-size: 12px;
-    text-align: justify;
+    font-size: 13px;
+    text-align: start;
     text-indent: 10px;
   }
   > .images {
     width: 100%;
-    height: 30%;
-    background-color: red;
+    height: 34%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
   }
 }
 .component-4 {
   width: 100%;
   height: 100vh;
   background-color: green;
+}
+.side {
+  height: 80%;
+  margin-top: auto;
 }
