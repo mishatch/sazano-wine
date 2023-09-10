@@ -239,8 +239,12 @@ nav > button:hover {
   text-align: start;
   text-indent: 10px;
 }
+.component-3 > p a {
+  text-decoration: none;
+  color: #4c0027;
+}
 .component-3 > .images {
-  width: 80%;
+  width: 70%;
   height: 30%;
   margin-bottom: 90px;
   display: flex;
