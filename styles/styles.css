@@ -52,6 +52,10 @@ body {
   position: relative;
 }
 
+.absolute {
+  position: absolute;
+}
+
 @media screen and (min-width: 1024px) {
   .line {
     width: 30%;
@@ -219,6 +223,31 @@ nav > button:hover {
 }
 .component-2 > img {
   width: 100px;
+}
+.component-2 .bottle-animation {
+  overflow-x: hidden;
+}
+.component-2 .bottle-animation > img {
+  width: 100px;
+}
+.component-2 .bottle-animation > div {
+  width: 100px;
+  height: 133px;
+  top: 188px;
+  position: absolute;
+}
+.component-2 .bottle-animation > div > img {
+  width: 100px;
+  position: absolute;
+}
+.component-2 .bottle-animation > div > img:nth-child(1) {
+  width: 94px;
+  left: 3px;
+}
+.component-2 .bottle-animation > div > img:nth-child(2) {
+  width: 94px;
+  left: 3px;
+  height: 129px;
 }
 
 .component-3 {

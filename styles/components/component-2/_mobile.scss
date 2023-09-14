@@ -18,4 +18,30 @@
   > img {
     width: 100px;
   }
+
+  .bottle-animation {
+    overflow-x: hidden;
+    > img {
+      width: 100px;
+    }
+    > div {
+      width: 100px;
+      height: 133px;
+      top: 188px;
+      > img {
+        width: 100px;
+        position: absolute;
+      }
+      position: absolute;
+      > img:nth-child(1) {
+        width: 94px;
+        left: 3px;
+      }
+      > img:nth-child(2) {
+        width: 94px;
+        left: 3px;
+        height: 129px;
+      }
+    }
+  }
 }
