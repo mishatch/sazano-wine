@@ -1,0 +1,99 @@
+.component-4 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  background-image: url(../../../assets/component-4/Path\ 7.svg);
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 100px;
+  > h1 {
+    color: $nav-links;
+    height: 55px;
+  }
+  > .carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    max-width: 260px;
+    height: 45%;
+    .carousel-prev,
+    .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .carousel-prev {
+      left: 10px;
+    }
+
+    .carousel-next {
+      right: 10px;
+    }
+
+    > .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+  }
+  button {
+    width: 80%;
+    max-width: 260px;
+
+    height: 60px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: $nav-links;
+  }
+}
+
+.carousel-card {
+  min-width: 300px;
+  max-width: 306px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  border-radius: 8px;
+  overflow: hidden;
+  > .carousel-description {
+    margin-top: auto;
+    margin-bottom: auto;
+    > h2 {
+      text-align: center;
+    }
+  }
+  > .carousel-image {
+    width: 100%;
+    > img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-card {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-container {
+    display: none;
+  }
+}

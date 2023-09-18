@@ -6,9 +6,11 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 90px;
   > h1 {
     color: $nav-links;
-    margin-top: 100px;
+    height: 55px;
   }
   > p {
     font-size: 13px;
@@ -21,17 +23,11 @@
   }
   > .images {
     width: 70%;
-    height: 30%;
-    margin-bottom: 90px;
+    height: 35%;
     display: flex;
     justify-content: space-around;
     gap: 20px;
   }
-}
-.component-4 {
-  width: 100%;
-  height: 100vh;
-  background-color: green;
 }
 .side {
   height: 80%;

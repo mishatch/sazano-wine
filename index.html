@@ -11,9 +11,15 @@
       type="image/png"
       href="./assets/favicon/Sazano_Wine_logo.svg"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <!-- <div id="preloader">
+    <div id="preloader">
       <svg
         id="second_svg"
         xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +55,12 @@
           fill="#682749"
         />
       </svg>
-    </div> -->
+    </div>
     <nav class="nav flex">
       <div class="links">
         <a href="#main" class="boxo active">მთავარი</a>
         <a href="#wine" class="boxo">მეღვინეობა</a>
-        <a href="#" class="boxo">სასტუმრო</a>
+        <a href="#hotel" class="boxo">სასტუმრო</a>
         <a href="" class="boxo">რესტორანი</a>
         <a href="" class="boxo">კონტაქტი</a>
       </div>
@@ -153,9 +159,51 @@
           />
         </div>
       </section>
-      <section class="component-4 hotel flex"></section>
+      <section class="component-4 hotel flex" id="hotel">
+        <h1 class="le-studio">სასტუმრო</h1>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-card">
+              <div class="carousel-image">
+                <img src="./assets/component-4/Oda.JPG" alt="Oda" />
+              </div>
+              <div class="carousel-description">
+                <h2 class="carousel-description le-studio">
+                  170 წლის იმერული ოდა
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="carousel-image">
+                <img src="./assets/component-4/oldBuilding.JPG" alt="Oda" />
+              </div>
+              <div class="carousel-description">
+                <h2 class="carousel-description le-studio">ძველი შენობა</h2>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="carousel-image">
+                <img src="./assets/component-4/newBuilding.JPG" alt="Oda" />
+              </div>
+              <div class="carousel-description">
+                <h2 class="carousel-description le-studio">ახალი შენობა</h2>
+              </div>
+            </div>
+          </div>
+          <i
+            class="fa-solid fa-circle-arrow-left carousel-prev"
+            style="color: #4c0027"
+          ></i>
+          <i
+            class="fa-solid fa-circle-arrow-right carousel-next"
+            style="color: #4c0027"
+          ></i>
+        </div>
+        <button class="rooms-link le-studio">ოთახების ნახვა</button>
+      </section>
     </div>
     <script src="./script/preloader.js"></script>
     <script src="./script/nav.js"></script>
+    <script src="./script/hotel-carousel.js"></script>
   </body>
 </html>

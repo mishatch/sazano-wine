@@ -258,10 +258,12 @@ nav > button:hover {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 90px;
 }
 .component-3 > h1 {
   color: #4c0027;
-  margin-top: 100px;
+  height: 55px;
 }
 .component-3 > p {
   font-size: 13px;
@@ -274,22 +276,109 @@ nav > button:hover {
 }
 .component-3 > .images {
   width: 70%;
-  height: 30%;
-  margin-bottom: 90px;
+  height: 35%;
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
 
-.component-4 {
-  width: 100%;
-  height: 100vh;
-  background-color: green;
-}
-
 .side {
   height: 80%;
   margin-top: auto;
+}
+
+.component-4 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  background-image: url(../../../assets/component-4/Path\ 7.svg);
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 100px;
+}
+.component-4 > h1 {
+  color: #4c0027;
+  height: 55px;
+}
+.component-4 > .carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80%;
+  max-width: 260px;
+  height: 45%;
+}
+.component-4 > .carousel-container .carousel-prev,
+.component-4 > .carousel-container .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.component-4 > .carousel-container .carousel-prev {
+  left: 10px;
+}
+.component-4 > .carousel-container .carousel-next {
+  right: 10px;
+}
+.component-4 > .carousel-container > .carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.component-4 button {
+  width: 80%;
+  max-width: 260px;
+  height: 60px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #4c0027;
+}
+
+.carousel-card {
+  min-width: 300px;
+  max-width: 306px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-card > .carousel-description {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.carousel-card > .carousel-description > h2 {
+  text-align: center;
+}
+.carousel-card > .carousel-image {
+  width: 100%;
+}
+.carousel-card > .carousel-image > img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-card {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-container {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
