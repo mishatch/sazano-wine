@@ -288,6 +288,7 @@ nav > button:hover {
 }
 
 .component-4 {
+  position: relative;
   width: 100%;
   height: 100vh;
   flex-direction: column;
@@ -302,21 +303,8 @@ nav > button:hover {
   background-repeat: no-repeat;
   background-position: 50% 100px;
 }
-.component-4 > h1 {
-  color: #4c0027;
-  height: 55px;
-}
-.component-4 > .carousel-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80%;
-  max-width: 260px;
-  height: 45%;
-}
-.component-4 > .carousel-container .carousel-prev,
-.component-4 > .carousel-container .carousel-next {
+.component-4 .carousel-prev,
+.component-4 .carousel-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -324,12 +312,28 @@ nav > button:hover {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  top: 46%;
 }
-.component-4 > .carousel-container .carousel-prev {
-  left: 10px;
+.component-4 .carousel-prev {
+  left: 20px;
 }
-.component-4 > .carousel-container .carousel-next {
-  right: 10px;
+.component-4 .carousel-next {
+  right: 20px;
+}
+.component-4 > h1 {
+  color: #4c0027;
+  height: 55px;
+  margin-bottom: -30px;
+}
+.component-4 > .carousel-container {
+  margin-bottom: 25px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80%;
+  max-width: 260px;
+  height: 45%;
 }
 .component-4 > .carousel-container > .carousel-track {
   display: flex;
