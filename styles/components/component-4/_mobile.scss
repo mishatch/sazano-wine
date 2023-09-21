@@ -53,8 +53,12 @@
       transition: transform 0.5s ease;
     }
   }
-  button {
+  a {
     width: 80%;
+    max-width: 260px;
+  }
+  button {
+    width: 100%;
     max-width: 260px;
 
     height: 60px;

@@ -340,8 +340,12 @@ nav > button:hover {
   height: 100%;
   transition: transform 0.5s ease;
 }
-.component-4 button {
+.component-4 a {
   width: 80%;
+  max-width: 260px;
+}
+.component-4 button {
+  width: 100%;
   max-width: 260px;
   height: 60px;
   border: none;
@@ -383,6 +387,17 @@ nav > button:hover {
   .carousel-container {
     display: none;
   }
+}
+.component-5 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 110px;
 }
 
 /*# sourceMappingURL=styles.css.map */
