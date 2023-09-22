@@ -49,19 +49,29 @@
       }
     }
   }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
   .modal {
-    padding: 1em;
-    max-width: 50ch;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
     border-radius: 10px;
-    &::backdrop {
-      background: rgb(0 0 0 / 0.4);
-    }
-    overflow-y: auto;
+    z-index: 10;
+    background-color: white;
+    width: 80%;
+    padding: 20px;
     > div:nth-of-type(1) {
       margin-bottom: 7px;
       display: flex;
@@ -85,12 +95,15 @@
         height: 270px;
         position: relative;
         > .prev {
-          left: 1rem;
+          left: 0;
         }
         > .next {
-          right: 1rem;
+          right: 0;
         }
         > .carousel-button {
+          display: flex;
+          align-items: center;
+          height: 100%;
           position: absolute;
           background: none;
           border: none;
@@ -106,10 +119,13 @@
           &:hover,
           &:focus {
             color: white;
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.05);
           }
           &:focus {
-            outline: 1px solid black;
+            outline: none;
+          }
+          > img {
+            width: 45px;
           }
         }
         .room-img {
@@ -138,4 +154,11 @@
       }
     }
   }
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
 }

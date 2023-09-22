@@ -169,19 +169,29 @@ nav > button:hover {
   color: white;
   font-size: 20px;
 }
-.component-3 .modal {
-  padding: 1em;
-  max-width: 50ch;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border: none;
-  border-radius: 10px;
-  overflow-y: auto;
+.component-3 #overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
 }
-.component-3 .modal::backdrop {
-  background: rgba(0, 0, 0, 0.4);
+.component-3 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 80%;
+  padding: 20px;
 }
 .component-3 .modal > div:nth-of-type(1) {
   margin-bottom: 7px;
@@ -205,12 +215,15 @@ nav > button:hover {
   position: relative;
 }
 .component-3 .modal .carousel-section > .carousel > .prev {
-  left: 1rem;
+  left: 0;
 }
 .component-3 .modal .carousel-section > .carousel > .next {
-  right: 1rem;
+  right: 0;
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
   position: absolute;
   background: none;
   border: none;
@@ -226,10 +239,13 @@ nav > button:hover {
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button:hover, .component-3 .modal .carousel-section > .carousel > .carousel-button:focus {
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button:focus {
-  outline: 1px solid black;
+  outline: none;
+}
+.component-3 .modal .carousel-section > .carousel > .carousel-button > img {
+  width: 45px;
 }
 .component-3 .modal .carousel-section > .carousel .room-img {
   margin-top: 15px;
@@ -253,6 +269,15 @@ nav > button:hover {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 footer {
