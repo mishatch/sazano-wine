@@ -27,12 +27,12 @@ body {
   background-color: $preloader-bg;
 }
 .content-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
   height: 100vh;
-  > section {
-    scroll-snap-align: start;
-  }
+  // > section {
+  //   scroll-snap-align: start;
+  // }
 }
 .relative {
   position: relative;
