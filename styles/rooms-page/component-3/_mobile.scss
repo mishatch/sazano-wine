@@ -61,6 +61,8 @@
     transition: 200ms ease-in-out;
   }
   .modal {
+    overflow-y: auto;
+    max-height: 100vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -70,8 +72,9 @@
     border-radius: 10px;
     z-index: 10;
     background-color: white;
-    width: 80%;
+    width: 100%;
     padding: 20px;
+    z-index: 200;
     > div:nth-of-type(1) {
       margin-bottom: 7px;
       display: flex;

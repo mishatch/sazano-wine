@@ -54,7 +54,7 @@ body {
 nav {
   width: 100%;
   height: 70px;
-  z-index: 999;
+  z-index: 100;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: transparent;
@@ -142,8 +142,10 @@ nav > button:hover {
 .component-3 > .room-card > div:nth-child(1) > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .component-3 > .room-card > div:nth-child(2) {
   width: 100%;
@@ -181,6 +183,8 @@ nav > button:hover {
   transition: 200ms ease-in-out;
 }
 .component-3 .modal {
+  overflow-y: auto;
+  max-height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -190,8 +194,9 @@ nav > button:hover {
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 80%;
+  width: 100%;
   padding: 20px;
+  z-index: 200;
 }
 .component-3 .modal > div:nth-of-type(1) {
   margin-bottom: 7px;
@@ -262,8 +267,10 @@ nav > button:hover {
 .component-3 .modal .carousel-section > .carousel .room-img > .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .component-3 .modal .carousel-section > .carousel .room-img > .slide[data-active] {
   opacity: 1;
@@ -285,6 +292,4 @@ footer {
   height: 350px;
   background-color: #4c0027;
   margin-top: 40px;
-}
-
-/*# sourceMappingURL=rooms.css.map */
+}/*# sourceMappingURL=rooms.css.map */
