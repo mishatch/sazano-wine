@@ -33,11 +33,19 @@ navBtn.addEventListener("click", () => {
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
+
+overlay.addEventListener("click", () => {
+  const modals = document.querySelectorAll(".modal.active");
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
-    navBtn.disabled = true;
+    // navBtn.disabled = true;
     if (clicked) {
       nav.style.backgroundColor = "transparent";
       links.classList.add("hidden");
@@ -56,7 +64,7 @@ closeModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = button.closest(".modal");
     closeModal(modal);
-    navBtn.disabled = false;
+    // navBtn.disabled = false;
   });
 });
 

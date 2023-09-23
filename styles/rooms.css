@@ -212,6 +212,9 @@ nav > button:hover {
   background-color: lightgray;
   margin: 0 auto;
 }
+.component-3 .modal .carousel-section {
+  margin-bottom: 20px;
+}
 .component-3 .modal .carousel-section > .carousel {
   width: 100%;
   height: 270px;
@@ -226,7 +229,7 @@ nav > button:hover {
 .component-3 .modal .carousel-section > .carousel > .carousel-button {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 55px;
   position: absolute;
   background: none;
   border: none;
@@ -236,9 +239,8 @@ nav > button:hover {
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  border-radius: 0.25rem;
   padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button:hover, .component-3 .modal .carousel-section > .carousel > .carousel-button:focus {
   color: white;
@@ -277,6 +279,7 @@ nav > button:hover {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 100;
 }
 
 .modal.active {
