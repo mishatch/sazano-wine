@@ -13,6 +13,10 @@
   font-family: le studio;
   src: url(./fonts/bpg_le_studio_02_caps.ttf);
 }
+@font-face {
+  font-family: castellar;
+  src: url(./fonts/CASTELAR.ttf);
+}
 .flex {
   display: flex;
 }
@@ -33,6 +37,10 @@
 
 .le-studio {
   font-family: le studio;
+}
+
+.castellar {
+  font-family: castellar;
 }
 
 body {
@@ -111,9 +119,14 @@ nav > button:hover {
 }
 
 .component-2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
   width: 100%;
-  height: 500px;
-  background-color: red;
+  margin-bottom: 30px;
+}
+.component-2 > h1 {
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -288,9 +301,81 @@ nav > button:hover {
 
 footer {
   width: 100%;
-  height: 350px;
   background-color: #4c0027;
   margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+}
+footer > .footer-top {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer > .footer-top > .footer-title {
+  flex-direction: column;
+  align-items: center;
+}
+footer > .footer-top > .footer-title > .footer-logo {
+  width: 65px;
+  margin-bottom: 15px;
+  height: 62px;
+}
+footer > .footer-top > .footer-title > h6 {
+  text-align: center;
+  font-size: 18px;
+  color: #8c6b7c;
+  margin-bottom: 15px;
+}
+footer > .footer-top > .footer-title:hover {
+  cursor: default;
+}
+footer > .footer-top > .footer-title:hover > h6 {
+  color: white;
+  transition: 0.4s;
+}
+footer > .footer-top > .footer-title:hover > .footer-logo > path {
+  fill: white;
+  transition: 0.4s;
+}
+footer > .footer-top > p {
+  font-size: 10px;
+  color: #8c6b7c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer > .footer-top > p:last-of-type {
+  margin-bottom: 15px;
+}
+footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #8c6b7c;
+  margin-bottom: 15px;
+}
+footer ul {
+  gap: 20px;
+  align-items: center;
+}
+footer ul > a > li {
+  list-style-type: none;
+}
+footer ul > a > li svg {
+  width: 29px;
+}
+footer ul > a > li svg:first-of-type {
+  height: 22px;
+}
+footer ul > a:hover path {
+  fill: white;
+  transition: 0.4s;
+}
+footer ul > a:last-of-type:hover #booking-path {
+  fill: white;
+  transition: 0.4s;
+}
+footer ul > a:last-of-type:hover .transparent {
+  fill: #4c0027;
 }
 
 /*# sourceMappingURL=rooms.css.map */

@@ -6,6 +6,10 @@
   font-family: le studio;
   src: url(./fonts/bpg_le_studio_02_caps.ttf);
 }
+@font-face {
+  font-family: castellar;
+  src: url(./fonts/CASTELAR.ttf);
+}
 .flex {
   display: flex;
 }
@@ -23,16 +27,14 @@
 .le-studio {
   font-family: le studio;
 }
+.castellar {
+  font-family: castellar;
+}
 body {
   background-color: $preloader-bg;
 }
 .content-container {
-  // scroll-snap-type: y mandatory;
-  // overflow-y: scroll;
   height: 100vh;
-  // > section {
-  //   scroll-snap-align: start;
-  // }
 }
 .relative {
   position: relative;
