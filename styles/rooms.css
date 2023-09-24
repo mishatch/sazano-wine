@@ -17,6 +17,10 @@
   font-family: castellar;
   src: url(./fonts/CASTELAR.ttf);
 }
+@font-face {
+  font-family: helvetica;
+  src: url(./fonts/Helvetica.ttf);
+}
 .flex {
   display: flex;
 }
@@ -41,6 +45,10 @@
 
 .castellar {
   font-family: castellar;
+}
+
+.helvetica {
+  font-family: helvetica;
 }
 
 body {
@@ -257,7 +265,6 @@ nav > button:hover {
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button:hover, .component-3 .modal .carousel-section > .carousel > .carousel-button:focus {
   color: white;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .component-3 .modal .carousel-section > .carousel > .carousel-button:focus {
   outline: none;
