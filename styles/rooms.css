@@ -163,8 +163,8 @@ nav > button:hover {
 
 @media screen and (min-width: 768px) {
   .hotel-description.component-2 {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
     margin-bottom: 30px;
   }
 }
@@ -378,8 +378,8 @@ nav > button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   .component-3.rooms-flex > .room-card {
     width: 45%;
