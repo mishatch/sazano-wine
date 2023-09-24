@@ -1,0 +1,25 @@
+@media screen and (min-width: $desktop) {
+  #footer {
+    .footer-top {
+      > p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-large) {
+  #footer.footer {
+    .footer-top {
+      > p {
+        font-size: 16px;
+      }
+      > .footer-title {
+        margin-bottom: 15px;
+        > .footer-logo {
+          width: 90px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

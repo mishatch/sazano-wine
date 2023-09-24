@@ -126,6 +126,25 @@ nav > button:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  #component-2 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #component-2.component-2 {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 50px;
+  }
+  #component-2.component-2 > p {
+    font-size: 20px;
+  }
+  #component-2.component-2 > h1 {
+    font-size: 30px;
+  }
+}
 .component-2 {
   padding-left: 20px;
   padding-right: 20px;
@@ -136,8 +155,47 @@ nav > button:hover {
 .component-2 > h1 {
   text-align: center;
   margin-bottom: 30px;
+  color: #4c0027;
+}
+.component-2 > p {
+  text-indent: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .hotel-description.component-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #component-3 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  #component-3 > .room-card {
+    width: 30%;
+    max-width: 380px;
+  }
+  #component-3 > .modal {
+    max-width: 900px;
+  }
+  #component-3 > .modal > .carousel-section {
+    height: 600px;
+  }
+  #component-3 > .modal > .carousel-section > .carousel {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #component-3.component-3 {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #component-3.component-3 > .modal {
+    max-width: 1100px;
+  }
+}
 .component-3 {
   padding-left: 20px;
   padding-right: 20px;
@@ -179,6 +237,7 @@ nav > button:hover {
   text-align: center;
   font-size: 20px;
   margin-top: 10px;
+  color: #4c0027;
 }
 .component-3 > .room-card > div:nth-child(2) > button {
   width: 100%;
@@ -189,6 +248,11 @@ nav > button:hover {
   background-color: #4c0027;
   color: white;
   font-size: 20px;
+}
+.component-3 > .room-card > div:nth-child(2) > button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 .component-3 #overlay {
   position: fixed;
@@ -224,8 +288,11 @@ nav > button:hover {
 }
 .component-3 .modal > div:nth-of-type(1) > div {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 20px;
+}
+.component-3 .modal > div:nth-of-type(1) > div:hover {
+  cursor: pointer;
 }
 .component-3 .modal .line {
   width: 100%;
@@ -306,6 +373,46 @@ nav > button:hover {
   transform: translate(-50%, -50%) scale(1);
 }
 
+@media screen and (min-width: 768px) {
+  .component-3.rooms-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .component-3.rooms-flex > .room-card {
+    width: 45%;
+    max-width: 350px;
+  }
+  .component-3.rooms-flex > .modal {
+    width: 80%;
+    max-width: 620px;
+  }
+  .component-3.rooms-flex > .modal > .carousel-section {
+    height: 350px;
+  }
+  .component-3.rooms-flex > .modal > .carousel-section > .carousel {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #footer .footer-top > p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #footer.footer .footer-top > p {
+    font-size: 16px;
+  }
+  #footer.footer .footer-top > .footer-title {
+    margin-bottom: 15px;
+  }
+  #footer.footer .footer-top > .footer-title > .footer-logo {
+    width: 90px;
+    height: auto;
+  }
+}
 footer {
   width: 100%;
   background-color: #4c0027;
@@ -363,6 +470,7 @@ footer .line {
 footer ul {
   gap: 20px;
   align-items: center;
+  margin-top: 5px;
 }
 footer ul > a > li {
   list-style-type: none;
@@ -383,6 +491,12 @@ footer ul > a:last-of-type:hover #booking-path {
 }
 footer ul > a:last-of-type:hover .transparent {
   fill: #4c0027;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-top > p {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=rooms.css.map */
