@@ -216,11 +216,10 @@ nav > button:hover {
 
 .component-2 {
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -240,7 +239,7 @@ nav > button:hover {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 90px;
 }
 .component-3 > h1 {
@@ -270,101 +269,66 @@ nav > button:hover {
 }
 
 .component-4 {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  padding-top: 80px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 100px;
-  padding-bottom: 110px;
-  background-image: url(../../../assets/component-4/Path\ 7.svg);
-  background-size: 90% auto;
-  background-repeat: no-repeat;
-  background-position: 50% 100px;
-}
-.component-4 .carousel-prev,
-.component-4 .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  top: 46%;
-}
-.component-4 .carousel-prev {
-  left: 20px;
-}
-.component-4 .carousel-next {
-  right: 20px;
 }
 .component-4 > h1 {
   color: #4c0027;
-  height: 55px;
-  margin-bottom: -30px;
+  margin-bottom: 30px;
 }
-.component-4 > .carousel-container {
-  margin-bottom: 25px;
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80%;
-  max-width: 260px;
-  height: 45%;
-}
-.component-4 > .carousel-container > .carousel-track {
-  display: flex;
-  height: 100%;
-  transition: transform 0.5s ease;
-}
-.component-4 a {
-  width: 80%;
-  max-width: 260px;
-}
-.component-4 button {
-  width: 100%;
-  max-width: 260px;
-  height: 60px;
+.component-4 > a > button {
+  width: 230px;
+  font-size: 14px;
+  height: 50px;
+  background-color: #4c0027;
   border: none;
+  margin-top: 50px;
   color: white;
   border-radius: 10px;
-  background-color: #4c0027;
 }
-
-.carousel-card {
-  min-width: 300px;
-  max-width: 306px;
-  height: 100%;
+.component-4 > a > button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.component-4 .carousel-section {
   display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 100%;
+  height: 400px;
 }
-.carousel-card > .carousel-description {
-  margin-top: auto;
-  margin-bottom: auto;
+.component-4 .carousel-section > .carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-.carousel-card > .carousel-description > h2 {
-  text-align: center;
-}
-.carousel-card > .carousel-image {
+.component-4 .carousel-section > .carousel .room-img {
+  margin-top: 15px;
   width: 100%;
 }
-.carousel-card > .carousel-image > img {
-  max-width: 100%;
+.component-4 .carousel-section > .carousel .room-img > .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  list-style: none;
+  transition: 400ms opacity ease-in-out;
+  transition-delay: 400ms;
+}
+.component-4 .carousel-section > .carousel .room-img > .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.component-4 .carousel-section > .carousel .room-img > .slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
-@media screen and (max-width: 767px) {
-  .carousel-card {
-    min-width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
   .carousel-container {
     display: none;

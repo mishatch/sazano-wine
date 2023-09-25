@@ -1,51 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector(".carousel-track");
-  const cards = document.querySelectorAll(".carousel-card");
-  const prevButton = document.querySelector(".carousel-prev");
-  const nextButton = document.querySelector(".carousel-next");
+  const buttons = document.querySelectorAll("[data-carousel-button]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+      const slides = button
+        .closest("[data-carousel]")
+        .querySelector("[data-slides]");
+      const activeSlide = slides.querySelector("[data-active]");
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+      if (newIndex < 0) {
+        newIndex = slides.children.length - 1;
+      }
+      if (newIndex >= slides.children.length) {
+        newIndex = 0;
+      }
+      slides.children[newIndex].dataset.active = true;
+      delete activeSlide.dataset.active;
+    });
 
-  let index = 0;
-
-  function updateIndex(newIndex) {
-    if (newIndex < 0) {
-      index = cards.length - 1;
-    } else if (newIndex >= cards.length) {
-      index = 0;
-    } else {
-      index = newIndex;
+    function autoSwitchSlides() {
+      const slides = button
+        .closest("[data-carousel]")
+        .querySelector("[data-slides]");
+      const activeSlide = slides.querySelector("[data-active]");
+      let newIndex = [...slides.children].indexOf(activeSlide) + 1;
+      if (newIndex >= slides.children.length) {
+        newIndex = 0;
+      }
+      slides.children[newIndex].dataset.active = true;
+      delete activeSlide.dataset.active;
     }
-  }
 
-  function updateTrack() {
-    const offset = -index * cards[0].offsetWidth;
-    track.style.transform = `translateX(${offset}px)`;
-  }
-
-  function prevSlide() {
-    updateIndex(index - 1);
-    updateTrack();
-  }
-
-  function nextSlide() {
-    updateIndex(index + 1);
-    updateTrack();
-  }
-
-  prevButton.addEventListener("click", prevSlide);
-  nextButton.addEventListener("click", nextSlide);
-
-  function updateVisibility() {
-    if (window.innerWidth < 768) {
-      cards.forEach((card) => (card.style.display = "flex"));
-    } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
-      cards.forEach(
-        (card, i) => (card.style.display = i < 2 ? "flex" : "none")
-      );
-    } else {
-      cards.forEach((card) => (card.style.display = "flex"));
+    let autoSlideInterval;
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(autoSwitchSlides, 3000); // Change slide every 5 seconds (5000 milliseconds)
     }
-  }
 
-  window.addEventListener("resize", updateVisibility);
-  updateVisibility();
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    startAutoSlide();
+
+    button.addEventListener("mouseenter", stopAutoSlide);
+    button.addEventListener("mouseleave", startAutoSlide);
+  });
 });

@@ -58,11 +58,11 @@
     </div>
     <nav class="nav flex">
       <div class="links">
-        <a href="#main" class="boxo active">მთავარი</a>
-        <a href="#wine" class="boxo">მეღვინეობა</a>
-        <a href="#hotel" class="boxo">სასტუმრო</a>
-        <a href="#restaurant" class="boxo">რესტორანი</a>
-        <a href="#footer" class="boxo">კონტაქტი</a>
+        <a href="#main" class="boxo active" onclick="closeNav()">მთავარი</a>
+        <a href="#wine" class="boxo" onclick="closeNav()">მეღვინეობა</a>
+        <a href="#hotel" class="boxo" onclick="closeNav()">სასტუმრო</a>
+        <a href="#restaurant" class="boxo" onclick="closeNav()">რესტორანი</a>
+        <a href="#footer" class="boxo" onclick="closeNav()">კონტაქტი</a>
       </div>
       <button class="nav-btn">
         <svg
@@ -140,45 +140,37 @@
       </section>
       <section class="component-4 hotel flex" id="hotel">
         <h1 class="le-studio">სასტუმრო</h1>
-        <div class="carousel-container">
-          <div class="carousel-track">
-            <div class="carousel-card">
-              <div class="carousel-image">
-                <img src="./assets/component-4/Oda.JPG" alt="Oda" />
-              </div>
-              <div class="carousel-description">
-                <h2 class="carousel-description le-studio">იმერული ოდა</h2>
-              </div>
-            </div>
-            <div class="carousel-card">
-              <div class="carousel-image">
-                <img src="./assets/component-4/oldBuilding.JPG" alt="Oda" />
-              </div>
-              <div class="carousel-description">
-                <h2 class="carousel-description le-studio">ძველი შენობა</h2>
-              </div>
-            </div>
-            <div class="carousel-card">
-              <div class="carousel-image">
-                <img src="./assets/component-4/newBuilding.JPG" alt="Oda" />
-              </div>
-              <div class="carousel-description">
-                <h2 class="carousel-description le-studio">ახალი შენობა</h2>
-              </div>
-            </div>
+        <section class="carousel-section" aria-label="room pics">
+          <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">
+              <img src="./assets/rooms/icons8-arrow-48.png" alt="Previous" />
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              <img src="./assets/rooms/icons8-forward-48.png" alt="Next" />
+            </button>
+
+            <ul class="room-img" data-slides>
+              <li class="slide" data-active>
+                <img src="./assets/rooms/Oda/IMG_9840.jpg" alt="Oda House" />
+              </li>
+              <li class="slide">
+                <img src="./assets/rooms/Oda/IMG_9841.jpg" alt="Oda House" />
+              </li>
+              <li class="slide">
+                <img src="./assets/rooms/Oda/482978811.jpg" alt="Oda House" />
+              </li>
+              <li class="slide">
+                <img src="./assets/rooms/Oda/482978805.jpg" alt="Oda House" />
+              </li>
+              <li class="slide">
+                <img src="./assets/rooms/Oda/bed-lamp.jpeg" alt="Oda House" />
+              </li>
+            </ul>
           </div>
-        </div>
+        </section>
         <a href="./rooms.html"
-          ><button class="rooms-link le-studio">ოთახების ნახვა</button></a
+          ><button class="see-rooms le-studio">იხილეთ ყველა ოთახი</button></a
         >
-        <i
-          class="fa-solid fa-circle-arrow-left carousel-prev"
-          style="color: #4c0027"
-        ></i>
-        <i
-          class="fa-solid fa-circle-arrow-right carousel-next"
-          style="color: #4c0027"
-        ></i>
       </section>
       <section class="component-5 restaurant flex" id="restaurant">
         <h1 class="heading le-studio">რესტორანი</h1>

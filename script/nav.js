@@ -29,3 +29,14 @@ button.addEventListener("click", () => {
     clicked = false;
   }
 });
+function closeNav() {
+  nav.style.backgroundColor = "transparent";
+  links.classList.add("hidden");
+  links.style.display = "none";
+  button.style.width = "70px";
+  button.style.height = "70px";
+  button.style.paddingTop = "33px";
+  button.style.marginTop = "-35px";
+  button.style.backgroundColor = "#4c0027";
+  clicked = false;
+}
