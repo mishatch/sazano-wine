@@ -7,8 +7,13 @@
   padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
-  > img {
-    max-width: 100%;
-    width: 480px;
+  .main-section-img {
+    > img {
+      max-width: 100%;
+      width: 480px;
+    }
+  }
+  .main-section-txt {
+    display: none;
   }
 }

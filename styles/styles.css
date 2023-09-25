@@ -224,9 +224,12 @@ nav > button:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
-.component-2 > img {
+.component-2 .main-section-img > img {
   max-width: 100%;
   width: 480px;
+}
+.component-2 .main-section-txt {
+  display: none;
 }
 
 .component-3 {
