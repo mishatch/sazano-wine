@@ -158,7 +158,7 @@ body.no-scroll {
 nav {
   width: 100%;
   height: 70px;
-  z-index: 999;
+  z-index: 10;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: transparent;
@@ -370,6 +370,65 @@ nav > button:hover {
   font-weight: bold;
   color: #4c0027;
   text-decoration: underline;
+}
+.component-5 .modal {
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 30;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+}
+.component-5 .modal > .menu-pics {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.component-5 .modal > .menu-pics > img {
+  max-width: 100%;
+}
+.component-5 .modal > div:nth-of-type(1) {
+  margin-bottom: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.component-5 .modal > div:nth-of-type(1) > h1 {
+  color: #4c0027;
+  font-size: 20px;
+}
+.component-5 .modal > div:nth-of-type(1) > div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.component-5 .modal > div:nth-of-type(1) > div:hover {
+  cursor: pointer;
+}
+.component-5 .modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.component-5 #overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 20;
+}
+.component-5 #overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media screen and (min-width: 1024px) {

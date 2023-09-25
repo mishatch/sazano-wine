@@ -33,4 +33,63 @@
       }
     }
   }
+  .modal {
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 30;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    > .menu-pics {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > img {
+        max-width: 100%;
+      }
+    }
+    > div:nth-of-type(1) {
+      margin-bottom: 20px;
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      > h1 {
+        color: $nav-links;
+        font-size: 20px;
+      }
+      > div {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  #overlay {
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 20;
+  }
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
