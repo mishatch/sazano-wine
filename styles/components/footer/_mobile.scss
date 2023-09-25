@@ -74,6 +74,9 @@ footer {
           transition: 0.4s;
         }
       }
+      .transparent {
+        fill: #4c0027;
+      }
     }
     > a:last-of-type {
       &:hover {
