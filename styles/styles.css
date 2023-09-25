@@ -13,6 +13,14 @@
   font-family: le studio;
   src: url(./fonts/bpg_le_studio_02_caps.ttf);
 }
+@font-face {
+  font-family: castellar;
+  src: url(./fonts/CASTELAR.ttf);
+}
+@font-face {
+  font-family: helvetica;
+  src: url(./fonts/Helvetica.ttf);
+}
 .flex {
   display: flex;
 }
@@ -33,6 +41,14 @@
 
 .le-studio {
   font-family: le studio;
+}
+
+.castellar {
+  font-family: castellar;
+}
+
+.helvetica {
+  font-family: helvetica;
 }
 
 body {
@@ -200,49 +216,17 @@ nav > button:hover {
 
 .component-2 {
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
-  position: relative;
-}
-.component-2 > .main-heading {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.component-2 > .main-heading > img {
-  max-width: 100%;
 }
 .component-2 > img {
-  width: 100px;
-}
-.component-2 .bottle-animation {
-  overflow-x: hidden;
-}
-.component-2 .bottle-animation > img {
-  width: 100px;
-}
-.component-2 .bottle-animation > div {
-  width: 100px;
-  height: 133px;
-  top: 188px;
-  position: absolute;
-}
-.component-2 .bottle-animation > div > img {
-  width: 100px;
-  position: absolute;
-}
-.component-2 .bottle-animation > div > img:nth-child(1) {
-  width: 94px;
-  left: 3px;
-}
-.component-2 .bottle-animation > div > img:nth-child(2) {
-  width: 94px;
-  left: 3px;
-  height: 129px;
+  max-width: 100%;
+  width: 480px;
 }
 
 .component-3 {
@@ -395,10 +379,104 @@ nav > button:hover {
   padding-bottom: 110px;
 }
 
+@media screen and (min-width: 1024px) {
+  #footer .footer-top > p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #footer.footer .footer-top > .footer-title {
+    margin-bottom: 15px;
+  }
+  #footer.footer .footer-top > .footer-title > .footer-logo {
+    width: 90px;
+    height: auto;
+  }
+}
 footer {
   width: 100%;
-  height: 300px;
   background-color: #4c0027;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+}
+footer > .footer-top {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer > .footer-top > .footer-title {
+  flex-direction: column;
+  align-items: center;
+}
+footer > .footer-top > .footer-title > .footer-logo {
+  width: 65px;
+  margin-bottom: 15px;
+  height: 62px;
+}
+footer > .footer-top > .footer-title > h6 {
+  text-align: center;
+  font-size: 18px;
+  color: #8c6b7c;
+  margin-bottom: 15px;
+}
+footer > .footer-top > .footer-title:hover {
+  cursor: default;
+}
+footer > .footer-top > .footer-title:hover > h6 {
+  color: white;
+  transition: 0.4s;
+}
+footer > .footer-top > .footer-title:hover > .footer-logo > path {
+  fill: white;
+  transition: 0.4s;
+}
+footer > .footer-top > p {
+  font-size: 10px;
+  color: #8c6b7c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer > .footer-top > p:last-of-type {
+  margin-bottom: 15px;
+}
+footer .footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #8c6b7c;
+  margin-bottom: 15px;
+}
+footer ul {
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+footer ul > a > li {
+  list-style-type: none;
+}
+footer ul > a > li svg {
+  width: 29px;
+}
+footer ul > a > li svg:first-of-type {
+  height: 22px;
+}
+footer ul > a:hover path {
+  fill: white;
+  transition: 0.4s;
+}
+footer ul > a:last-of-type:hover #booking-path {
+  fill: white;
+  transition: 0.4s;
+}
+footer ul > a:last-of-type:hover .transparent {
+  fill: #4c0027;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-top > p {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
