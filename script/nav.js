@@ -40,3 +40,4 @@ function closeNav() {
   button.style.backgroundColor = "#4c0027";
   clicked = false;
 }
+///
