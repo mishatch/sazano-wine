@@ -240,14 +240,15 @@ nav > button:hover {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
+  margin-top: -70px;
 }
 .component-3 > h1 {
   color: #4c0027;
-  height: 55px;
+  height: 23px;
 }
 .component-3 > p {
-  font-size: 13px;
+  font-size: 14px;
   text-align: start;
   text-indent: 10px;
 }
@@ -271,10 +272,13 @@ nav > button:hover {
 .component-4 {
   width: 100%;
   padding-top: 80px;
+  height: 100vh;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: -70px;
 }
 .component-4 > h1 {
   color: #4c0027;
@@ -344,6 +348,7 @@ nav > button:hover {
   padding-right: 20px;
   padding-top: 100px;
   padding-bottom: 110px;
+  margin-top: -70px;
 }
 
 @media screen and (min-width: 1024px) {
