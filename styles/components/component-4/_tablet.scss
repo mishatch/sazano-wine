@@ -2,4 +2,9 @@
   .carousel-container {
     display: none;
   }
+  .component-4.hotel {
+    > h1 {
+      font-size: 28px;
+    }
+  }
 }

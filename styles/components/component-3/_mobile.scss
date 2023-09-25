@@ -9,16 +9,23 @@
   padding-top: 70px;
   padding-bottom: 70px;
   margin-top: -70px;
-  > h1 {
-    color: $nav-links;
-    height: 23px;
-  }
-  > p {
-    font-size: 14px;
-    text-align: start;
-    text-indent: 10px;
-    a {
+  .winery-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 56%;
+    > h1 {
       color: $nav-links;
+      height: 23px;
+    }
+    > p {
+      font-size: 14px;
+      text-align: start;
+      text-indent: 10px;
+      a {
+        color: $nav-links;
+      }
     }
   }
   > .images {

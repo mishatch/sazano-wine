@@ -1,0 +1,11 @@
+@media screen and (min-width: $desktop) {
+  #main.component-2 {
+    padding-left: 80px;
+    padding-right: 80px;
+    > .main-section-img {
+      > img {
+        max-width: 85%;
+      }
+    }
+  }
+}

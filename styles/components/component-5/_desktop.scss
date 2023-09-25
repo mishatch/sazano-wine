@@ -1,0 +1,9 @@
+@media screen and (min-width: $desktop) {
+  #restaurant {
+    .restaurant-description {
+      > p {
+        line-height: 30px;
+      }
+    }
+  }
+}

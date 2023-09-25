@@ -214,6 +214,15 @@ nav > button:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  #main.component-2 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  #main.component-2 > .main-section-img > img {
+    max-width: 85%;
+  }
+}
 .component-2 {
   width: 100%;
   height: 100vh;
@@ -231,6 +240,48 @@ nav > button:hover {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  #main {
+    justify-content: space-around;
+  }
+  #main > .main-section-img {
+    width: 50%;
+  }
+  #main > .main-section-txt {
+    display: block;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #main > .main-section-txt > h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #4c0027;
+  }
+  #main > .main-section-txt > p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #component-3 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  #component-3 > div:nth-child(1) {
+    justify-content: space-around;
+  }
+  #component-3 > div:nth-child(1) > p {
+    width: 72%;
+    line-height: 30px;
+  }
+  #component-3 > div:nth-child(2) {
+    height: 370px;
+  }
+}
 .component-3 {
   width: 100%;
   height: 100vh;
@@ -243,16 +294,23 @@ nav > button:hover {
   padding-bottom: 70px;
   margin-top: -70px;
 }
-.component-3 > h1 {
+.component-3 .winery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 56%;
+}
+.component-3 .winery-content > h1 {
   color: #4c0027;
   height: 23px;
 }
-.component-3 > p {
+.component-3 .winery-content > p {
   font-size: 14px;
   text-align: start;
   text-indent: 10px;
 }
-.component-3 > p a {
+.component-3 .winery-content > p a {
   color: #4c0027;
 }
 .component-3 > .images {
@@ -268,6 +326,33 @@ nav > button:hover {
   margin-top: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .component-3.wine.flex {
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .component-3.wine.flex > .winery-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90%;
+  }
+  .component-3.wine.flex > .winery-content > h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+  .component-3.wine.flex > .winery-content > p {
+    width: 70%;
+    font-size: 18px;
+  }
+  .component-3.wine.flex > .images {
+    height: 240px;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+}
 .component-4 {
   width: 100%;
   padding-top: 80px;
@@ -336,6 +421,14 @@ nav > button:hover {
   .carousel-container {
     display: none;
   }
+  .component-4.hotel > h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #restaurant .restaurant-description > p {
+    line-height: 30px;
+  }
 }
 .component-5 {
   width: 100%;
@@ -350,26 +443,27 @@ nav > button:hover {
 .component-5 > h1 {
   color: #4c0027;
 }
-.component-5 > .restaurant-img {
+.component-5 > .restaurant-content > .restaurant-img {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.component-5 > .restaurant-img > img {
+.component-5 > .restaurant-content > .restaurant-img > img {
   max-width: 100%;
   max-height: 350px;
 }
-.component-5 .restaurant-description > p {
+.component-5 > .restaurant-content .restaurant-description > p {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
 }
-.component-5 .restaurant-description > p > span {
+.component-5 > .restaurant-content .restaurant-description > p > span {
   font-weight: bold;
   color: #4c0027;
   text-decoration: underline;
+  cursor: pointer;
 }
 .component-5 .modal {
   overflow-y: auto;
@@ -394,14 +488,8 @@ nav > button:hover {
   max-width: 100%;
 }
 .component-5 .modal > div:nth-of-type(1) {
-  margin-bottom: 20px;
-  margin-top: 25px;
   display: flex;
   justify-content: center;
-}
-.component-5 .modal > div:nth-of-type(1) > h1 {
-  color: #4c0027;
-  font-size: 20px;
 }
 .component-5 .modal > div:nth-of-type(1) > div {
   position: absolute;
@@ -431,6 +519,36 @@ nav > button:hover {
   pointer-events: all;
 }
 
+@media screen and (min-width: 768px) {
+  #restaurant {
+    justify-content: space-around;
+    height: 70vh;
+    padding-bottom: 0;
+  }
+  #restaurant > h1 {
+    font-size: 28px;
+  }
+  #restaurant > .restaurant-content {
+    display: flex;
+  }
+  #restaurant > .restaurant-content > div {
+    width: 50%;
+  }
+  #restaurant > .restaurant-content > .restaurant-img > img {
+    max-width: 105%;
+  }
+  #restaurant > .restaurant-content > .restaurant-description > p.boxo {
+    font-size: 18px;
+  }
+  #restaurant > .restaurant-content > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #restaurant > .restaurant-content > div:nth-child(2) > p {
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 1024px) {
   #footer .footer-top > p {
     font-size: 12px;

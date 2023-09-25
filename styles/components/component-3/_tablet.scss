@@ -1,0 +1,27 @@
+@media screen and (min-width: $tablet) {
+  .component-3.wine.flex {
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    > .winery-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 90%;
+      > h1 {
+        font-size: 28px;
+        width: 100%;
+      }
+      > p {
+        width: 70%;
+        font-size: 18px;
+      }
+    }
+    > .images {
+      height: 240px;
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

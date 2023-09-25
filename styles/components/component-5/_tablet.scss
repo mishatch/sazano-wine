@@ -1,0 +1,34 @@
+@media screen and (min-width: $tablet) {
+  #restaurant {
+    justify-content: space-around;
+    height: 70vh;
+    padding-bottom: 0;
+    > h1 {
+      font-size: 28px;
+    }
+    > .restaurant-content {
+      display: flex;
+      > div {
+        width: 50%;
+      }
+      > .restaurant-img {
+        > img {
+          max-width: 105%;
+        }
+      }
+      > .restaurant-description {
+        > p.boxo {
+          font-size: 18px;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
