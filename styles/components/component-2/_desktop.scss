@@ -16,6 +16,11 @@
         display: none;
       }
     }
+    > .main-section-txt {
+      > p {
+        line-height: 30px;
+      }
+    }
   }
 }
 @media screen and (min-width: $desktop-large) {

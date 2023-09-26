@@ -3,14 +3,22 @@
     padding-left: 80px;
     padding-right: 80px;
     > div:nth-child(1) {
-      justify-content: space-around;
+      justify-content: center;
+      gap: 40px;
       > p {
         width: 72%;
-        line-height: 30px;
+        line-height: 40px;
       }
     }
     > div:nth-child(2) {
       height: 370px;
+      margin-bottom: auto;
     }
+  }
+}
+@media screen and (min-width: $desktop-large) {
+  #component-3.component-3 {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }

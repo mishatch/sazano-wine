@@ -293,6 +293,9 @@ nav > button:hover {
   #main.component-2 > .main-section-img > img:nth-child(1) {
     display: none;
   }
+  #main.component-2 > .main-section-txt > p {
+    line-height: 30px;
+  }
 }
 @media screen and (min-width: 1920px) {
   #main.component-2.main {
@@ -353,6 +356,7 @@ nav > button:hover {
     color: #4c0027;
   }
   #main > .main-section-txt > p {
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -362,14 +366,22 @@ nav > button:hover {
     padding-right: 80px;
   }
   #component-3 > div:nth-child(1) {
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
   }
   #component-3 > div:nth-child(1) > p {
     width: 72%;
-    line-height: 30px;
+    line-height: 40px;
   }
   #component-3 > div:nth-child(2) {
     height: 370px;
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #component-3.component-3 {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 .component-3 {
