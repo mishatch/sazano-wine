@@ -1,8 +1,41 @@
 @media screen and (min-width: $desktop) {
-  #restaurant {
-    .restaurant-description {
-      > p {
-        line-height: 30px;
+  #restaurant.restaurant.component-5 {
+    > .restaurant-content {
+      .restaurant-description {
+        > p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-large) {
+  #restaurant.restaurant.component-5.flex {
+    padding-right: 12%;
+    padding-left: 12%;
+    margin-bottom: 100px;
+    > h1 {
+      font-size: 32px;
+    }
+    > .restaurant-content {
+      > .restaurant-description {
+        > p {
+          font-size: 22px;
+          line-height: 40px;
+          padding-left: 130px;
+          padding-right: 0;
+        }
+      }
+      > .restaurant-img {
+        display: flex;
+        justify-content: center;
+        > img:nth-child(1) {
+          display: none;
+        }
+        > img:nth-child(2) {
+          display: block;
+          max-height: 450px;
+        }
       }
     }
   }

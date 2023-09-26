@@ -6,6 +6,11 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  > .change-language {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
   .main-section-img {
     > img:nth-child(1) {
       max-width: 100%;

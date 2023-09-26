@@ -113,6 +113,7 @@
     </nav>
     <div class="content-container">
       <section class="component-2 main relative" id="main">
+        <button class="change-language">change</button>
         <div class="main-section-img">
           <img src="./assets/component-2/Group 33@2x.png" alt="Sazano Wine" />
           <img
@@ -122,8 +123,10 @@
           />
         </div>
         <div class="main-section-txt">
-          <h1 class="le-studio">საზანოს ღვინის მარანი და სასტუმრო</h1>
-          <p class="boxo">
+          <h1 class="le-studio desktop-main-title">
+            საზანოს ღვინის მარანი და სასტუმრო
+          </h1>
+          <p class="boxo main-title-description">
             დადსადსადსა დსამკდმსა დმსკამდკსა დმსაკდმ დსამკდსა დსა
           </p>
           <div class="heading-image">
@@ -133,8 +136,8 @@
       </section>
       <section class="component-3 wine flex" id="component-3">
         <div class="winery-content">
-          <h1 class="heading le-studio">მეღვინეობა</h1>
-          <p class="description boxo">
+          <h1 class="heading le-studio winery-heading">მეღვინეობა</h1>
+          <p class="description boxo winery-description">
             “საზანოს ღვინის” მარანმა ღვინის წარმოება 2018 წლიდან დაიწყო. ჩვენი
             მარანი სახელგანთქმულია იმერული სახეობის ღვინოებით, თუმცა, გარდა
             იმერულისა, გვაქვს კახური “ქისი”, “რქაწითელი” და “საფერავი”. მშრალი
@@ -145,7 +148,7 @@
             ალკოჰოლურ სასმელებს ვასხამთ როგორც ჩვენი ვენახებიდან მოყვანილი,
             ასევე ადგილობრივი მოსახლეობისგან შესყიდული ყურძნით. იხილეთ ყველა
             სახეობა
-            <b><a href="#" class="boxo"> დეტალურად:</a></b>
+            <b><a href="#" class="boxo winery-details"> დეტალურად:</a></b>
           </p>
         </div>
         <div class="images">
@@ -167,7 +170,7 @@
         </div>
       </section>
       <section class="component-4 hotel flex" id="hotel">
-        <h1 class="le-studio">სასტუმრო</h1>
+        <h1 class="le-studio hotel-heading">სასტუმრო</h1>
         <section class="carousel-section" aria-label="room pics">
           <div class="carousel" data-carousel>
             <button class="carousel-button prev" data-carousel-button="prev">
@@ -228,16 +231,21 @@
         >
       </section>
       <section class="component-5 restaurant flex" id="restaurant">
-        <h1 class="heading le-studio">რესტორანი</h1>
+        <h1 class="heading le-studio restaurant-heading">რესტორანი</h1>
         <div class="restaurant-content">
           <div class="restaurant-img">
             <img
               src="./assets/component-5/Mask Group 13@2x.png"
               alt="Restaurant"
             />
+            <img
+              src="./assets/component-5/restaurant-desktop.png"
+              alt="Restaurant"
+              class="restairant-img-desktop none"
+            />
           </div>
           <div class="restaurant-description">
-            <p class="boxo">
+            <p class="boxo restaurant-txt">
               რეგიონში პირველი ღია სამზარეულო, რომელსაც ერთდროულად 100 ადამიანის
               გამასპინძლება შეუძლია, გამოირჩევა თავისი მინიმალისტური დიზაინით,
               თანამედროვე აღჭურვილობითა და პანორამული ხედით. ჩვენი ბარ-რესტორანი
@@ -305,11 +313,15 @@
               & Hotel
             </h6>
           </div>
-          <p class="le-studio">
+          <p class="le-studio address-txt">
             მისამართი: საქართველო, ქ. თერჯოლა, სოფ. ზედა საზანო
           </p>
-          <p class="le-studio">ტელეფონის ნომერი: +995 588 88 88 58</p>
-          <p class="le-studio">ელექტრონული ფოსტა: frontdesksazano@gmail.com</p>
+          <p class="le-studio mobile-number-txt">
+            ტელეფონის ნომერი: +995 588 88 88 58
+          </p>
+          <p class="le-studio email-txt">
+            ელექტრონული ფოსტა: frontdesksazano@gmail.com
+          </p>
         </div>
         <div class="footer-line"></div>
         <ul class="icons flex">
@@ -426,5 +438,6 @@
     <script src="./script/preloader.js"></script>
     <script src="./script/nav.js"></script>
     <script src="./script/hotel-carousel.js"></script>
+    <script src="./script/languagechanger.js"></script>
   </body>
 </html>

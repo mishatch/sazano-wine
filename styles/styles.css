@@ -287,7 +287,7 @@ nav > button:hover {
   }
   #main.component-2 > .main-section-img > img:nth-child(2) {
     display: block;
-    width: 85%;
+    width: 80%;
     max-width: 900px;
   }
   #main.component-2 > .main-section-img > img:nth-child(1) {
@@ -317,6 +317,11 @@ nav > button:hover {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+}
+.component-2 > .change-language {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 .component-2 .main-section-img > img:nth-child(1) {
   max-width: 100%;
@@ -483,6 +488,14 @@ nav > button:hover {
     height: 100%;
   }
 }
+@media screen and (min-width: 1920px) {
+  #hotel {
+    height: 100vh;
+  }
+  #hotel > h1 {
+    font-size: 32px;
+  }
+}
 .component-4 {
   width: 100%;
   padding-top: 80px;
@@ -498,13 +511,15 @@ nav > button:hover {
   color: #4c0027;
   margin-bottom: 30px;
 }
+.component-4 > a {
+  margin-top: 50px;
+}
 .component-4 > a > button {
   width: 230px;
   font-size: 14px;
   height: 50px;
   background-color: #4c0027;
   border: none;
-  margin-top: 50px;
   color: white;
   border-radius: 10px;
 }
@@ -556,8 +571,35 @@ nav > button:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  #restaurant .restaurant-description > p {
+  #restaurant.restaurant.component-5 > .restaurant-content .restaurant-description > p {
     line-height: 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #restaurant.restaurant.component-5.flex {
+    padding-right: 12%;
+    padding-left: 12%;
+    margin-bottom: 100px;
+  }
+  #restaurant.restaurant.component-5.flex > h1 {
+    font-size: 32px;
+  }
+  #restaurant.restaurant.component-5.flex > .restaurant-content > .restaurant-description > p {
+    font-size: 22px;
+    line-height: 40px;
+    padding-left: 130px;
+    padding-right: 0;
+  }
+  #restaurant.restaurant.component-5.flex > .restaurant-content > .restaurant-img {
+    display: flex;
+    justify-content: center;
+  }
+  #restaurant.restaurant.component-5.flex > .restaurant-content > .restaurant-img > img:nth-child(1) {
+    display: none;
+  }
+  #restaurant.restaurant.component-5.flex > .restaurant-content > .restaurant-img > img:nth-child(2) {
+    display: block;
+    max-height: 450px;
   }
 }
 .component-5 {

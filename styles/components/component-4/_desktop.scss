@@ -6,3 +6,11 @@
     }
   }
 }
+@media screen and (min-width: $desktop-large) {
+  #hotel {
+    height: 100vh;
+    > h1 {
+      font-size: 32px;
+    }
+  }
+}
