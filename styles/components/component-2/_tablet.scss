@@ -11,8 +11,9 @@
       width: 50%;
     }
     > .main-section-txt {
-      display: block;
+      gap: 20px;
       width: 50%;
+      align-items: center;
       padding-left: 40px;
       padding-right: 40px;
       height: 400px;
@@ -34,7 +35,7 @@
       }
       > p {
         font-size: 18px;
-
+        width: 110%;
         text-align: center;
       }
     }

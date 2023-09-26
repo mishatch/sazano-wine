@@ -58,11 +58,21 @@
     </div>
     <nav class="nav flex" id="nav">
       <div class="links">
-        <a href="#main" class="boxo active" onclick="closeNav()">მთავარი</a>
-        <a href="#component-3" class="boxo" onclick="closeNav()">მეღვინეობა</a>
-        <a href="#hotel" class="boxo" onclick="closeNav()">სასტუმრო</a>
-        <a href="#restaurant" class="boxo" onclick="closeNav()">რესტორანი</a>
-        <a href="#footer" class="boxo" onclick="closeNav()">კონტაქტი</a>
+        <a href="#main" class="boxo active mainpage-link" onclick="closeNav()"
+          >მთავარი</a
+        >
+        <a href="#component-3" class="boxo wine-link" onclick="closeNav()"
+          >მეღვინეობა</a
+        >
+        <a href="#hotel" class="boxo hotel-link" onclick="closeNav()"
+          >სასტუმრო</a
+        >
+        <a href="#restaurant" class="boxo restaurant-link" onclick="closeNav()"
+          >რესტორანი</a
+        >
+        <a href="#footer" class="boxo contact-link" onclick="closeNav()"
+          >კონტაქტი</a
+        >
       </div>
       <button class="nav-btn">
         <svg
@@ -103,10 +113,12 @@
           <img src="./assets/nav/Sazano_Wine_logo.svg" alt="Sazano Wine" />
         </div>
         <div class="desktop-links">
-          <a href="#component-3" class="boxo">მეღვინეობა</a>
-          <a href="#hotel" class="boxo">სასტუმრო</a>
-          <a href="#restaurant" class="boxo">რესტორანი</a>
-          <a href="#footer" class="boxo">კონტაქტი</a>
+          <a href="#component-3" class="boxo wine-link-desktop">მეღვინეობა</a>
+          <a href="#hotel" class="boxo hotel-link-desktop">სასტუმრო</a>
+          <a href="#restaurant" class="boxo restaurant-link-desktop"
+            >რესტორანი</a
+          >
+          <a href="#footer" class="boxo contact-link-desktop">კონტაქტი</a>
         </div>
         <div class="language-changer-desktop"></div>
       </div>
@@ -115,7 +127,7 @@
       <section class="component-2 main relative" id="main">
         <div class="custom-toggle">
           <input type="checkbox" id="customToggleSwitch" />
-          <label for="customToggleSwitch"></label>
+          <label for="customToggleSwitch" class="geo"></label>
         </div>
         <div class="main-section-img">
           <img src="./assets/component-2/Group 33@2x.png" alt="Sazano Wine" />
@@ -126,11 +138,14 @@
           />
         </div>
         <div class="main-section-txt">
-          <h1 class="le-studio desktop-main-title">
+          <h1 class="le-studio desktop-main-title" id="desktopTitle">
             საზანოს ღვინის მარანი და სასტუმრო
           </h1>
           <p class="boxo main-title-description">
-            დადსადსადსა დსამკდმსა დმსკამდკსა დმსაკდმ დსამკდსა დსა
+            „საზანოს ღვინო“ 2017 წელს დაარსდა. იგი ცნობილია თავისი მეღვინეობით,
+            კომფორტული და გამორჩეული სასტუმრო კომპლექსითა და უგემრიელესი
+            სამზარეულოთი, რომელთაც წლების განმავლობაში არაერთი სტუმრის მოწონება
+            დაუმსახურებიათ.
           </p>
           <div class="heading-image">
             <img src="./assets/component-2/Group 42.svg" alt="Grape" />

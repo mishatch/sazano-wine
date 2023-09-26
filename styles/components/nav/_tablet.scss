@@ -5,11 +5,12 @@
     padding-right: 60px;
     padding-top: 20px;
     border-radius: 0;
+    background-color: transparent !important;
     > .links {
-      display: none;
+      display: none !important;
     }
     > button {
-      display: none;
+      display: none !important;
     }
     > .desktop-nav {
       width: 100%;
