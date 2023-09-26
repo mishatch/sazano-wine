@@ -1,0 +1,8 @@
+@media screen and (min-width: $desktop) {
+  .component-4.hotel {
+    height: 115vh;
+    > .carousel-section {
+      height: 100%;
+    }
+  }
+}
