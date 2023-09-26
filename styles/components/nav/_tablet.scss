@@ -1,0 +1,59 @@
+@media screen and (min-width: $tablet) {
+  nav.nav {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    border-radius: 0;
+    > .links {
+      display: none;
+    }
+    > button {
+      display: none;
+    }
+    > .desktop-nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > .desktop-logo {
+        width: 50px;
+
+        > img {
+          max-width: 100%;
+        }
+      }
+      > .desktop-links {
+        display: flex;
+        gap: 20px;
+        > a {
+          color: $nav-links;
+          text-decoration: none;
+          font-size: 18px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: $nav-links;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+          }
+
+          &:hover::before {
+            width: 50%;
+          }
+        }
+      }
+      > .language-changer-desktop {
+        width: 70px;
+        height: 100%;
+        background-color: red;
+      }
+    }
+  }
+}

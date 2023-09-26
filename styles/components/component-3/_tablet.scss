@@ -6,7 +6,7 @@
     > .winery-content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start;
       height: 90%;
       > h1 {
@@ -16,6 +16,7 @@
       > p {
         width: 70%;
         font-size: 18px;
+        line-height: 24px;
       }
     }
     > .images {

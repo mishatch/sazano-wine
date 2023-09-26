@@ -167,6 +167,9 @@ nav {
   align-items: center;
   transition: background-color 0.3s ease-in-out;
 }
+nav .desktop-nav {
+  display: none;
+}
 nav > .links {
   margin-top: 14px;
   margin-bottom: 7px;
@@ -214,13 +217,87 @@ nav > button:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  nav.nav {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    border-radius: 0;
+  }
+  nav.nav > .links {
+    display: none;
+  }
+  nav.nav > button {
+    display: none;
+  }
+  nav.nav > .desktop-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav.nav > .desktop-nav > .desktop-logo {
+    width: 50px;
+  }
+  nav.nav > .desktop-nav > .desktop-logo > img {
+    max-width: 100%;
+  }
+  nav.nav > .desktop-nav > .desktop-links {
+    display: flex;
+    gap: 20px;
+  }
+  nav.nav > .desktop-nav > .desktop-links > a {
+    color: #4c0027;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav.nav > .desktop-nav > .desktop-links > a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #4c0027;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  nav.nav > .desktop-nav > .desktop-links > a:hover::before {
+    width: 50%;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop {
+    width: 70px;
+    height: 100%;
+    background-color: red;
+  }
+}
 @media screen and (min-width: 1024px) {
   #main.component-2 {
     padding-left: 80px;
     padding-right: 80px;
   }
-  #main.component-2 > .main-section-img > img {
-    max-width: 85%;
+  #main.component-2 > .main-section-img {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+  }
+  #main.component-2 > .main-section-img > img:nth-child(2) {
+    display: block;
+    width: 85%;
+    max-width: 900px;
+  }
+  #main.component-2 > .main-section-img > img:nth-child(1) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #main.component-2.main {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 .component-2 {
@@ -232,9 +309,12 @@ nav > button:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
-.component-2 .main-section-img > img {
+.component-2 .main-section-img > img:nth-child(1) {
   max-width: 100%;
   width: 480px;
+}
+.component-2 .main-section-img > img:nth-child(2) {
+  display: none;
 }
 .component-2 .main-section-txt {
   display: none;
@@ -243,6 +323,8 @@ nav > button:hover {
 @media screen and (min-width: 768px) {
   #main {
     justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   #main > .main-section-img {
     width: 50%;
@@ -252,10 +334,18 @@ nav > button:hover {
     width: 50%;
     padding-left: 40px;
     padding-right: 40px;
-    height: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  #main > .main-section-txt > .heading-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #main > .main-section-txt > .heading-image > img {
+    max-width: 100%;
   }
   #main > .main-section-txt > h1 {
     font-size: 28px;
@@ -335,7 +425,7 @@ nav > button:hover {
   .component-3.wine.flex > .winery-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     height: 90%;
   }
@@ -346,6 +436,7 @@ nav > button:hover {
   .component-3.wine.flex > .winery-content > p {
     width: 70%;
     font-size: 18px;
+    line-height: 24px;
   }
   .component-3.wine.flex > .images {
     height: 240px;
@@ -547,6 +638,7 @@ nav > button:hover {
   }
   #restaurant > .restaurant-content > .restaurant-description > p.boxo {
     font-size: 18px;
+    line-height: 24px;
   }
   #restaurant > .restaurant-content > div:nth-child(2) {
     display: flex;

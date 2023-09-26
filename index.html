@@ -56,7 +56,7 @@
         />
       </svg>
     </div>
-    <nav class="nav flex">
+    <nav class="nav flex" id="nav">
       <div class="links">
         <a href="#main" class="boxo active" onclick="closeNav()">მთავარი</a>
         <a href="#component-3" class="boxo" onclick="closeNav()">მეღვინეობა</a>
@@ -98,17 +98,37 @@
           </g>
         </svg>
       </button>
+      <div class="desktop-nav">
+        <div class="desktop-logo">
+          <img src="./assets/nav/Sazano_Wine_logo.svg" alt="Sazano Wine" />
+        </div>
+        <div class="desktop-links">
+          <a href="#component-3" class="boxo">მეღვინეობა</a>
+          <a href="#hotel" class="boxo">სასტუმრო</a>
+          <a href="#restaurant" class="boxo">რესტორანი</a>
+          <a href="#footer" class="boxo">კონტაქტი</a>
+        </div>
+        <div class="language-changer-desktop"></div>
+      </div>
     </nav>
     <div class="content-container">
       <section class="component-2 main relative" id="main">
         <div class="main-section-img">
           <img src="./assets/component-2/Group 33@2x.png" alt="Sazano Wine" />
+          <img
+            src="./assets/component-2/desktop-main.png"
+            alt="Sazano Wine"
+            class="desktop-main"
+          />
         </div>
         <div class="main-section-txt">
           <h1 class="le-studio">საზანოს ღვინის მარანი და სასტუმრო</h1>
           <p class="boxo">
             დადსადსადსა დსამკდმსა დმსკამდკსა დმსაკდმ დსამკდსა დსა
           </p>
+          <div class="heading-image">
+            <img src="./assets/component-2/Group 42.svg" alt="Grape" />
+          </div>
         </div>
       </section>
       <section class="component-3 wine flex" id="component-3">

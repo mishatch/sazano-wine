@@ -19,13 +19,13 @@
     />
   </head>
   <body>
-    <nav class="nav flex">
+    <nav class="nav flex" id="nav">
       <div class="links">
-        <a href="./index.html#main" class="boxo active">მთავარი</a>
-        <a href="./index.html#wine" class="boxo">მეღვინეობა</a>
-        <a href="#hotel" class="boxo">სასტუმრო</a>
-        <a href="#restaurant" class="boxo">რესტორანი</a>
-        <a href="#footer" class="boxo">კონტაქტი</a>
+        <a href="#main" class="boxo active" onclick="closeNav()">მთავარი</a>
+        <a href="#" class="boxo" onclick="closeNav()">მეღვინეობა</a>
+        <a href="#hotel" class="boxo" onclick="closeNav()">სასტუმრო</a>
+        <a href="#restaurant" class="boxo" onclick="closeNav()">რესტორანი</a>
+        <a href="#footer" class="boxo" onclick="closeNav()">კონტაქტი</a>
       </div>
       <button class="nav-btn">
         <svg
@@ -61,6 +61,20 @@
           </g>
         </svg>
       </button>
+      <div class="desktop-nav">
+        <div class="desktop-logo">
+          <a href="./index.html">
+            <img src="./assets/nav/Sazano_Wine_logo.svg" alt="Sazano Wine" />
+          </a>
+        </div>
+        <div class="desktop-links">
+          <a href="#" class="boxo">მეღვინეობა</a>
+          <a href="#hotel" class="boxo">სასტუმრო</a>
+          <a href="#restaurant" class="boxo">რესტორანი</a>
+          <a href="#footer" class="boxo">კონტაქტი</a>
+        </div>
+        <div class="language-changer-desktop"></div>
+      </div>
     </nav>
     <div class="content-wrapper">
       <section class="hotel-description component-2" id="component-2">
