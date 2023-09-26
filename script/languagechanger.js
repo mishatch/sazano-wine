@@ -6,7 +6,7 @@ const hotelHeading = document.querySelector(".hotel-heading");
 const hotelButton = document.querySelector(".see-rooms");
 const restaurantHeading = document.querySelector(".restaurant-heading");
 const restaurantDescription = document.querySelector(".restaurant-txt");
-const changeLanguageButton = document.querySelector(".change-language");
+const changeLanguageButton = document.querySelector("#customToggleSwitch");
 let click = false;
 const changeLanguage = function (textelement, newText, oldFont, newFont) {
   textelement.textContent = newText;
@@ -16,20 +16,10 @@ const changeLanguage = function (textelement, newText, oldFont, newFont) {
 
 changeLanguageButton.addEventListener("click", () => {
   if (!click) {
-    changeLanguage(
-      desktopTitle,
-      "Sazano Wine Cellar and Hotel",
-      "le-studio",
-      "helvetica"
-    );
+    console.log("eng");
     click = true;
   } else {
-    changeLanguage(
-      desktopTitle,
-      "საზანოს ღვინის მარანი და სასტუმრო",
-      "helvetica",
-      "le-studio"
-    );
+    console.log("geo");
     click = false;
   }
 });

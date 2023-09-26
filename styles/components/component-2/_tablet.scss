@@ -3,6 +3,10 @@
     justify-content: space-around;
     padding-left: 60px;
     padding-right: 60px;
+    > .custom-toggle {
+      top: -40px;
+      right: 60px;
+    }
     > .main-section-img {
       width: 50%;
     }

@@ -1,5 +1,5 @@
 //Sandwich navigation bar animation
-const changeLanguageBtn = document.querySelector(".change-language");
+const changeLanguageBtn = document.querySelector(".custom-toggle");
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 const links = document.querySelector(".links");

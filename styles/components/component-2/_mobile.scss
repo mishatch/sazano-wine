@@ -6,10 +6,55 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  > .change-language {
+  > .custom-toggle {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 34px;
+    > input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    label {
+      background-color: #fff;
+      transition: 0.3s;
+      border-radius: 34px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 34px;
+      &::before {
+        background-image: url(../../../assets/component-2/Flag-Republic-of-Georgia.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 35px;
+        border-radius: 50%;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        top: 4px;
+        width: 26px;
+        transform: translateX(0);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+    }
+    input:checked + label {
+      background-color: #906474;
+      transition: 0.3s;
+    }
+    input:checked + label:before {
+      background-image: url(../../../assets/component-2/Flag_of_the_United_Kingdom.svg.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateX(26px);
+    }
   }
   .main-section-img {
     > img:nth-child(1) {

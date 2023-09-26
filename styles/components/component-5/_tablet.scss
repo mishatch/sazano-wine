@@ -3,6 +3,9 @@
     justify-content: space-around;
     height: 70vh;
     padding-bottom: 0;
+    > .modal {
+      width: 60%;
+    }
     > h1 {
       font-size: 28px;
     }

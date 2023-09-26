@@ -1,5 +1,8 @@
 @media screen and (min-width: $desktop) {
   #restaurant.restaurant.component-5 {
+    > .modal {
+      width: 50%;
+    }
     > .restaurant-content {
       .restaurant-description {
         > p {
@@ -11,6 +14,9 @@
 }
 @media screen and (min-width: $desktop-large) {
   #restaurant.restaurant.component-5.flex {
+    > .modal {
+      width: 40%;
+    }
     padding-right: 12%;
     padding-left: 12%;
     margin-bottom: 100px;

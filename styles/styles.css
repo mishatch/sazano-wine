@@ -271,7 +271,48 @@ nav > button:hover {
   nav.nav > .desktop-nav > .language-changer-desktop {
     width: 70px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle > input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle label {
+    background-color: #fff;
+    border-radius: 34px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 34px;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle label::before {
     background-color: red;
+    border-radius: 50%;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 26px;
+    transform: translateX(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle input:checked + label {
+    background-color: #2196f3;
+  }
+  nav.nav > .desktop-nav > .language-changer-desktop > .toggle input:checked + label:before {
+    background-color: #66bb6a; /* Green ball after clicking */
+    transform: translateX(26px);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -318,10 +359,55 @@ nav > button:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
-.component-2 > .change-language {
+.component-2 > .custom-toggle {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 34px;
+}
+.component-2 > .custom-toggle > input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.component-2 > .custom-toggle label {
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 34px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 34px;
+}
+.component-2 > .custom-toggle label::before {
+  background-image: url(../../../assets/component-2/Flag-Republic-of-Georgia.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+  border-radius: 50%;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 26px;
+  transform: translateX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.component-2 > .custom-toggle input:checked + label {
+  background-color: #906474;
+  transition: 0.3s;
+}
+.component-2 > .custom-toggle input:checked + label:before {
+  background-image: url(../../../assets/component-2/Flag_of_the_United_Kingdom.svg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(26px);
 }
 .component-2 .main-section-img > img:nth-child(1) {
   max-width: 100%;
@@ -339,6 +425,10 @@ nav > button:hover {
     justify-content: space-around;
     padding-left: 60px;
     padding-right: 60px;
+  }
+  #main > .custom-toggle {
+    top: -40px;
+    right: 60px;
   }
   #main > .main-section-img {
     width: 50%;
@@ -571,6 +661,9 @@ nav > button:hover {
   }
 }
 @media screen and (min-width: 1024px) {
+  #restaurant.restaurant.component-5 > .modal {
+    width: 50%;
+  }
   #restaurant.restaurant.component-5 > .restaurant-content .restaurant-description > p {
     line-height: 30px;
   }
@@ -580,6 +673,9 @@ nav > button:hover {
     padding-right: 12%;
     padding-left: 12%;
     margin-bottom: 100px;
+  }
+  #restaurant.restaurant.component-5.flex > .modal {
+    width: 40%;
   }
   #restaurant.restaurant.component-5.flex > h1 {
     font-size: 32px;
@@ -696,6 +792,9 @@ nav > button:hover {
     justify-content: space-around;
     height: 70vh;
     padding-bottom: 0;
+  }
+  #restaurant > .modal {
+    width: 60%;
   }
   #restaurant > h1 {
     font-size: 28px;
