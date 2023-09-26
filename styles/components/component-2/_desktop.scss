@@ -27,5 +27,13 @@
   #main.component-2.main {
     padding-left: 12%;
     padding-right: 12%;
+    > .main-section-txt {
+      > p {
+        font-size: 22px;
+      }
+      > h1 {
+        font-size: 32px;
+      }
+    }
   }
 }

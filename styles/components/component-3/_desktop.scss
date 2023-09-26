@@ -20,5 +20,18 @@
   #component-3.component-3 {
     padding-left: 12%;
     padding-right: 12%;
+    > div:first-child {
+      gap: 90px;
+      > h1 {
+        font-size: 32px;
+      }
+      > p {
+        font-size: 22px;
+      }
+    }
+    > div:nth-child(2) {
+      height: 460px;
+      margin-bottom: auto;
+    }
   }
 }

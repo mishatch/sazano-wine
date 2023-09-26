@@ -302,6 +302,12 @@ nav > button:hover {
     padding-left: 12%;
     padding-right: 12%;
   }
+  #main.component-2.main > .main-section-txt > p {
+    font-size: 22px;
+  }
+  #main.component-2.main > .main-section-txt > h1 {
+    font-size: 32px;
+  }
 }
 .component-2 {
   width: 100%;
@@ -382,6 +388,19 @@ nav > button:hover {
   #component-3.component-3 {
     padding-left: 12%;
     padding-right: 12%;
+  }
+  #component-3.component-3 > div:first-child {
+    gap: 90px;
+  }
+  #component-3.component-3 > div:first-child > h1 {
+    font-size: 32px;
+  }
+  #component-3.component-3 > div:first-child > p {
+    font-size: 22px;
+  }
+  #component-3.component-3 > div:nth-child(2) {
+    height: 460px;
+    margin-bottom: auto;
   }
 }
 .component-3 {
