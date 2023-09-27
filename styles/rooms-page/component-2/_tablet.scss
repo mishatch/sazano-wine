@@ -4,4 +4,9 @@
     padding-right: 8%;
     margin-bottom: 30px;
   }
+  .wine-section.flex {
+    > .bottle-image {
+      height: 100%;
+    }
+  }
 }

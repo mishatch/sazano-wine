@@ -183,13 +183,16 @@ nav > button:hover {
   nav.nav > .desktop-nav > .language-changer-desktop {
     width: 70px;
     height: 100%;
-    background-color: red;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 1024px) {
   #component-2 {
     padding-left: 8%;
     padding-right: 8%;
+  }
+  #wine-section {
+    height: 400px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -203,6 +206,12 @@ nav > button:hover {
   }
   #component-2.component-2 > h1 {
     font-size: 30px;
+  }
+  #wine-section.wine-section > .bottle-description > h1 {
+    font-size: 32px;
+  }
+  #wine-section.wine-section > .bottle-description > p {
+    font-size: 22px;
   }
 }
 .component-2 {
@@ -221,11 +230,57 @@ nav > button:hover {
   text-indent: 20px;
 }
 
+.all-wines {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.all-wines > .wine-section:nth-of-type(1) {
+  margin-top: 50px;
+}
+.all-wines > .wine-section:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+.all-wines > .wine-section:nth-of-type(4) {
+  flex-direction: row-reverse;
+}
+.all-wines > .wine-section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.all-wines > .wine-section > div {
+  width: 100%;
+  height: 200px;
+}
+.all-wines > .wine-section .bottle-image {
+  display: flex;
+  justify-content: center;
+}
+.all-wines > .wine-section .bottle-image > img {
+  max-height: 100%;
+}
+.all-wines > .wine-section .bottle-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.all-wines > .wine-section .bottle-description > p {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .hotel-description.component-2 {
     padding-left: 8%;
     padding-right: 8%;
     margin-bottom: 30px;
+  }
+  .wine-section.flex > .bottle-image {
+    height: 100%;
   }
 }
 @media screen and (min-width: 1024px) {

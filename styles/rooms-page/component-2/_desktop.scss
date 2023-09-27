@@ -3,6 +3,9 @@
     padding-left: 8%;
     padding-right: 8%;
   }
+  #wine-section {
+    height: 400px;
+  }
 }
 @media screen and (min-width: $desktop-large) {
   #component-2.component-2 {
@@ -14,6 +17,16 @@
     }
     > h1 {
       font-size: $desktop-large-heading;
+    }
+  }
+  #wine-section.wine-section {
+    > .bottle-description {
+      > h1 {
+        font-size: 32px;
+      }
+      > p {
+        font-size: 22px;
+      }
     }
   }
 }
