@@ -245,6 +245,9 @@ nav > button:hover {
 .all-wines > .wine-section:nth-of-type(4) {
   flex-direction: row-reverse;
 }
+.all-wines > .wine-section:nth-of-type(6) {
+  flex-direction: row-reverse;
+}
 .all-wines > .wine-section {
   width: 100%;
   height: 300px;
@@ -398,6 +401,15 @@ nav > button:hover {
   width: 95%;
   padding: 20px;
   z-index: 200;
+}
+.component-3 .modal > p {
+  margin-top: 20px;
+  text-indent: 20px;
+}
+.component-3 .modal > ul {
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-bottom: 30px;
 }
 .component-3 .modal > div:nth-of-type(1) {
   margin-bottom: 7px;
