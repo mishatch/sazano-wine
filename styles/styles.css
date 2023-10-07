@@ -21,6 +21,23 @@
   font-family: helvetica;
   src: url(./fonts/Helvetica.ttf);
 }
+@font-face {
+  font-family: trajan;
+  src: url(./fonts/Trajan\ Pro\ Regular.ttf);
+}
+@font-face {
+  font-family: cormorant;
+  src: url(./fonts/CormorantGaramond-Regular.ttf);
+}
+.cormorant {
+  font-family: cormorant;
+  font-size: 18px !important;
+}
+
+.trajan {
+  font-family: trajan;
+}
+
 .flex {
   display: flex;
 }
@@ -362,7 +379,6 @@ nav > button:hover {
 }
 .component-2 > .custom-toggle {
   position: absolute;
-  display: none;
   top: 10px;
   right: 10px;
   width: 60px;
