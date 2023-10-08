@@ -488,38 +488,38 @@ nav > button:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  #component-3 {
+  #winery {
     padding-left: 80px;
     padding-right: 80px;
   }
-  #component-3 > div:nth-child(1) {
+  #winery > div:nth-child(1) {
     justify-content: center;
     gap: 40px;
   }
-  #component-3 > div:nth-child(1) > p {
+  #winery > div:nth-child(1) > p {
     width: 72%;
     line-height: 40px;
   }
-  #component-3 > div:nth-child(2) {
+  #winery > div:nth-child(2) {
     height: 370px;
     margin-bottom: auto;
   }
 }
 @media screen and (min-width: 1920px) {
-  #component-3.component-3 {
+  #winery.component-3 {
     padding-left: 12%;
     padding-right: 12%;
   }
-  #component-3.component-3 > div:first-child {
+  #winery.component-3 > div:first-child {
     gap: 90px;
   }
-  #component-3.component-3 > div:first-child > h1 {
+  #winery.component-3 > div:first-child > h1 {
     font-size: 32px;
   }
-  #component-3.component-3 > div:first-child > p {
+  #winery.component-3 > div:first-child > p {
     font-size: 22px;
   }
-  #component-3.component-3 > div:nth-child(2) {
+  #winery.component-3 > div:nth-child(2) {
     height: 460px;
     margin-bottom: auto;
   }
@@ -848,15 +848,15 @@ nav > button:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  #footer .footer-top > p {
+  #contact .footer-top > p {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 1920px) {
-  #footer.footer .footer-top > .footer-title {
+  #contact.footer .footer-top > .footer-title {
     margin-bottom: 15px;
   }
-  #footer.footer .footer-top > .footer-title > .footer-logo {
+  #contact.footer .footer-top > .footer-title > .footer-logo {
     width: 90px;
     height: auto;
   }

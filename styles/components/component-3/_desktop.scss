@@ -1,5 +1,5 @@
 @media screen and (min-width: $desktop) {
-  #component-3 {
+  #winery {
     padding-left: 80px;
     padding-right: 80px;
     > div:nth-child(1) {
@@ -17,7 +17,7 @@
   }
 }
 @media screen and (min-width: $desktop-large) {
-  #component-3.component-3 {
+  #winery.component-3 {
     padding-left: 12%;
     padding-right: 12%;
     > div:first-child {

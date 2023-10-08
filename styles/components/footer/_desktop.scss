@@ -1,5 +1,5 @@
 @media screen and (min-width: $desktop) {
-  #footer {
+  #contact {
     .footer-top {
       > p {
         font-size: 12px;
@@ -8,7 +8,7 @@
   }
 }
 @media screen and (min-width: $desktop-large) {
-  #footer.footer {
+  #contact.footer {
     .footer-top {
       > .footer-title {
         margin-bottom: 15px;
