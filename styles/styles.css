@@ -31,7 +31,7 @@
 }
 .cormorant {
   font-family: cormorant;
-  font-size: 18px !important;
+  font-size: 19px !important;
 }
 
 .trajan {
@@ -384,6 +384,9 @@ nav > button:hover {
   width: 60px;
   height: 34px;
 }
+.component-2 > .custom-toggle:hover {
+  cursor: pointer;
+}
 .component-2 > .custom-toggle > input[type=checkbox] {
   opacity: 0;
   width: 0;
@@ -399,6 +402,9 @@ nav > button:hover {
   left: 0;
   width: 60px;
   height: 34px;
+}
+.component-2 > .custom-toggle label:hover {
+  cursor: pointer;
 }
 .component-2 > .custom-toggle label::before {
   background-image: url(../../../assets/component-2/Flag-Republic-of-Georgia.webp);
