@@ -4,11 +4,9 @@ const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 const links = document.querySelector(".links");
 let clicked = false;
-// changeLanguageBtn.style.zIndex = "30";
 
 navBtn.addEventListener("click", () => {
   if (!clicked) {
-    // changeLanguageBtn.style.zIndex = "1";
     nav.style.backgroundColor = "#4c0027";
     links.style.display = "flex";
     navBtn.style.width = "auto";
@@ -19,7 +17,6 @@ navBtn.addEventListener("click", () => {
     links.classList.remove("hidden");
     clicked = true;
   } else {
-    // changeLanguageBtn.style.zIndex = "30";
     nav.style.backgroundColor = "transparent";
     links.classList.add("hidden");
     links.style.display = "none";

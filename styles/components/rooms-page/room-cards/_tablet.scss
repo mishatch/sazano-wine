@@ -1,0 +1,23 @@
+@media screen and (min-width: $tablet) {
+  .rooms-flex.rooms {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    > .room-card {
+      width: 45%;
+      max-width: 350px;
+    }
+    > .modal {
+      width: 80%;
+      max-width: 620px;
+      > .carousel-section {
+        height: 350px;
+        > .carousel {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

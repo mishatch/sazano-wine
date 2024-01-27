@@ -7,27 +7,27 @@
 
 @font-face {
   font-family: boxo;
-  src: url(./fonts/bpg_boxo.ttf);
+  src: url(../assets/fonts/bpg_boxo.ttf);
 }
 @font-face {
   font-family: le studio;
-  src: url(./fonts/bpg_le_studio_02_caps.ttf);
+  src: url(../assets/fonts/bpg_le_studio_02_caps.ttf);
 }
 @font-face {
   font-family: castellar;
-  src: url(./fonts/CASTELAR.ttf);
+  src: url(../assets/fonts/CASTELAR.ttf);
 }
 @font-face {
   font-family: helvetica;
-  src: url(./fonts/Helvetica.ttf);
+  src: url(../assets/fonts/Helvetica.ttf);
 }
 @font-face {
   font-family: trajan;
-  src: url(./fonts/Trajan\ Pro\ Regular.ttf);
+  src: url(../assets/fonts/Trajan\ Pro\ Regular.ttf);
 }
 @font-face {
   font-family: cormorant;
-  src: url(./fonts/CormorantGaramond-Regular.ttf);
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
 }
 .cormorant {
   font-family: cormorant;
@@ -70,10 +70,6 @@
 
 body {
   background-color: #f5e6ee;
-}
-
-.content-container {
-  height: 100vh;
 }
 
 .relative {
@@ -259,7 +255,7 @@ nav > button:hover {
   nav.nav > .desktop-nav > .desktop-logo {
     width: 50px;
   }
-  nav.nav > .desktop-nav > .desktop-logo > img {
+  nav.nav > .desktop-nav > .desktop-logo img {
     max-width: 100%;
   }
   nav.nav > .desktop-nav > .desktop-links {
@@ -407,7 +403,7 @@ nav > button:hover {
   cursor: pointer;
 }
 .component-2 > .custom-toggle label::before {
-  background-image: url(../../../assets/component-2/Flag-Republic-of-Georgia.webp);
+  background-image: url(../../../../assets/images/main/Flag-Republic-of-Georgia.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -427,7 +423,7 @@ nav > button:hover {
   transition: 0.3s;
 }
 .component-2 > .custom-toggle input:checked + label:before {
-  background-image: url(../../../assets/component-2/Flag_of_the_United_Kingdom.svg.webp);
+  background-image: url(../../../../assets/images/main/Flag_of_the_United_Kingdom.svg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -653,6 +649,9 @@ nav > button:hover {
   width: 100%;
   height: 100%;
   position: relative;
+}
+.component-4 .carousel-section > .carousel > .carousel-button {
+  display: none;
 }
 .component-4 .carousel-section > .carousel .room-img {
   margin-top: 15px;
@@ -947,6 +946,401 @@ footer ul > a:last-of-type:hover .transparent {
 @media screen and (min-width: 768px) {
   .footer .footer-top > p {
     font-size: 11px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #hotel-description {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  #wine-section {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #hotel-description.hotel-description {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 50px;
+  }
+  #hotel-description.hotel-description > p {
+    font-size: 20px;
+  }
+  #hotel-description.hotel-description > h1 {
+    font-size: 30px;
+  }
+  #wine-section.wine-section > .bottle-description > h1 {
+    font-size: 32px;
+  }
+  #wine-section.wine-section > .bottle-description > p {
+    font-size: 22px;
+  }
+}
+.hotel-description {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.hotel-description > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4c0027;
+}
+.hotel-description > p {
+  text-indent: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .all-wines {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .all-wines > .wine-section:first-of-type {
+    margin-top: 90px;
+  }
+  .all-wines > .wine-section {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .all-wines > .wine-section > div:first-child {
+    width: 100%;
+    height: 200px;
+  }
+  .all-wines > .wine-section .bottle-image {
+    display: flex;
+    justify-content: center;
+  }
+  .all-wines > .wine-section .bottle-image > img {
+    max-height: 100%;
+  }
+  .all-wines > .wine-section .bottle-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-wines > .wine-section .bottle-description > p {
+    text-align: center;
+  }
+  .all-wines > .wine-section .bottle-description > h1 {
+    margin-bottom: 20px;
+    color: #4c0027;
+  }
+}
+@media screen and (min-width: 768px) {
+  .all-wines {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .all-wines > .wine-section:nth-of-type(1) {
+    margin-top: 50px;
+  }
+  .all-wines > .wine-section:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .all-wines > .wine-section:nth-of-type(4) {
+    flex-direction: row-reverse;
+  }
+  .all-wines > .wine-section:nth-of-type(6) {
+    flex-direction: row-reverse;
+  }
+  .all-wines > .wine-section {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .all-wines > .wine-section > div {
+    width: 100%;
+    height: 200px;
+  }
+  .all-wines > .wine-section .bottle-image {
+    display: flex;
+    justify-content: center;
+  }
+  .all-wines > .wine-section .bottle-image > img {
+    max-height: 100%;
+  }
+  .all-wines > .wine-section .bottle-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-wines > .wine-section .bottle-description > p {
+    text-align: center;
+  }
+  .all-wines > .wine-section .bottle-description > h1 {
+    margin-bottom: 20px;
+    color: #4c0027;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.hotel-description {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 30px;
+  }
+  .wine-section.flex > .bottle-image {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #rooms-flex {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  #rooms-flex > .room-card {
+    width: 30%;
+    max-width: 380px;
+  }
+  #rooms-flex > .modal {
+    max-width: 900px;
+  }
+  #rooms-flex > .modal > .carousel-section {
+    height: 450px;
+  }
+  #rooms-flex > .modal > .carousel-section > .carousel {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #rooms-flex.rooms-flex {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #rooms-flex.rooms-flex > .modal {
+    max-width: 1100px;
+  }
+  #rooms-flex.rooms-flex > .modal > .carousel-section {
+    height: 600px;
+  }
+}
+.rooms-flex {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rooms-flex > div:last-of-type {
+  margin-bottom: 20px;
+}
+.rooms-flex > .room-card {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+}
+.rooms-flex > .room-card > div:nth-child(1) {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+.rooms-flex > .room-card > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.rooms-flex > .room-card > div:nth-child(2) {
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.rooms-flex > .room-card > div:nth-child(2) > h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #4c0027;
+}
+.rooms-flex > .room-card > div:nth-child(2) > button {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4c0027;
+  color: white;
+  font-size: 20px;
+}
+.rooms-flex > .room-card > div:nth-child(2) > button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.rooms-flex #overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+.rooms-flex .modal {
+  overflow-y: auto;
+  max-height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: none;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 95%;
+  padding: 20px;
+  z-index: 200;
+}
+.rooms-flex .modal > p {
+  margin-top: 20px;
+  text-indent: 20px;
+}
+.rooms-flex .modal > ul {
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+.rooms-flex .modal > div:nth-of-type(1) {
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+}
+.rooms-flex .modal > div:nth-of-type(1) > h1 {
+  color: #4c0027;
+}
+.rooms-flex .modal > div:nth-of-type(1) > div {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+.rooms-flex .modal > div:nth-of-type(1) > div:hover {
+  cursor: pointer;
+}
+.rooms-flex .modal .modal-line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+.rooms-flex .modal .carousel-section {
+  margin-bottom: 20px;
+}
+.rooms-flex .modal .carousel-section > .carousel {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+.rooms-flex .modal .carousel-section > .carousel > .prev {
+  left: 0;
+}
+.rooms-flex .modal .carousel-section > .carousel > .next {
+  right: 0;
+}
+.rooms-flex .modal .carousel-section > .carousel > .carousel-button {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.rooms-flex .modal .carousel-section > .carousel > .carousel-button:hover, .rooms-flex .modal .carousel-section > .carousel > .carousel-button:focus {
+  color: white;
+}
+.rooms-flex .modal .carousel-section > .carousel > .carousel-button:focus {
+  outline: none;
+}
+.rooms-flex .modal .carousel-section > .carousel > .carousel-button > img {
+  width: 45px;
+}
+.rooms-flex .modal .carousel-section > .carousel .room-img {
+  margin-top: 15px;
+  width: 100%;
+}
+.rooms-flex .modal .carousel-section > .carousel .room-img > .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  list-style: none;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.rooms-flex .modal .carousel-section > .carousel .room-img > .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.rooms-flex .modal .carousel-section > .carousel .room-img > .slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .rooms-flex.rooms {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .rooms-flex.rooms > .room-card {
+    width: 45%;
+    max-width: 350px;
+  }
+  .rooms-flex.rooms > .modal {
+    width: 80%;
+    max-width: 620px;
+  }
+  .rooms-flex.rooms > .modal > .carousel-section {
+    height: 350px;
+  }
+  .rooms-flex.rooms > .modal > .carousel-section > .carousel {
+    height: 100%;
   }
 }
 

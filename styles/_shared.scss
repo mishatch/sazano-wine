@@ -1,26 +1,26 @@
 @font-face {
   font-family: boxo;
-  src: url(./fonts/bpg_boxo.ttf);
+  src: url(../assets/fonts/bpg_boxo.ttf);
 }
 @font-face {
   font-family: le studio;
-  src: url(./fonts/bpg_le_studio_02_caps.ttf);
+  src: url(../assets/fonts/bpg_le_studio_02_caps.ttf);
 }
 @font-face {
   font-family: castellar;
-  src: url(./fonts/CASTELAR.ttf);
+  src: url(../assets/fonts/CASTELAR.ttf);
 }
 @font-face {
   font-family: helvetica;
-  src: url(./fonts/Helvetica.ttf);
+  src: url(../assets/fonts/Helvetica.ttf);
 }
 @font-face {
   font-family: trajan;
-  src: url(./fonts/Trajan\ Pro\ Regular.ttf);
+  src: url(../assets/fonts/Trajan\ Pro\ Regular.ttf);
 }
 @font-face {
   font-family: cormorant;
-  src: url(./fonts/CormorantGaramond-Regular.ttf);
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
 }
 .cormorant {
   font-family: cormorant;
@@ -55,9 +55,7 @@
 body {
   background-color: $preloader-bg;
 }
-.content-container {
-  height: 100vh;
-}
+
 .relative {
   position: relative;
 }

@@ -1,0 +1,71 @@
+.component-4 {
+  width: 100%;
+  padding-top: 80px;
+  height: 100vh;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -70px;
+  > h1 {
+    color: $nav-links;
+    margin-bottom: 30px;
+  }
+  > a {
+    margin-top: 50px;
+
+    > button {
+      width: 230px;
+      font-size: 14px;
+      height: 50px;
+      background-color: $nav-links;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+  .carousel-section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+
+
+    > .carousel {
+      >.carousel-button{
+        display: none;
+      }
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .room-img {
+        margin-top: 15px;
+        width: 100%;
+        > .slide {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+          list-style: none;
+          transition: 400ms opacity ease-in-out;
+          transition-delay: 400ms;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        > .slide[data-active] {
+          opacity: 1;
+          z-index: 1;
+          transition-delay: 0ms;
+        }
+      }
+    }
+  }
+}

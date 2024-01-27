@@ -1,0 +1,31 @@
+@media screen and (min-width: $desktop) {
+  #rooms-flex {
+    padding-left: 8%;
+    padding-right: 8%;
+    > .room-card {
+      width: 30%;
+      max-width: 380px;
+    }
+    > .modal {
+      max-width: 900px;
+      > .carousel-section {
+        height: 450px;
+        > .carousel {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-large) {
+  #rooms-flex.rooms-flex {
+    padding-left: 20%;
+    padding-right: 20%;
+    > .modal {
+      max-width: 1100px;
+      > .carousel-section {
+        height: 600px;
+      }
+    }
+  }
+}
