@@ -4,7 +4,9 @@ const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 const links = document.querySelector(".links");
 let clicked = false;
-changeLanguageBtn.style.zIndex = "30";
+if(changeLanguageBtn){
+  changeLanguageBtn.style.zIndex = "30";
+}
 
 navBtn.addEventListener("click", () => {
   if (!clicked) {
